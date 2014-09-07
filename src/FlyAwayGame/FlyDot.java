@@ -11,6 +11,7 @@ public class FlyDot {
 	private float x;
 	float y;
 	private float vy;
+	private float vx = 5;
 	private float vjump;
 	
 	public FlyDot(float x, float y, float vjump) throws SlickException {
@@ -31,6 +32,10 @@ public class FlyDot {
 	
 	public void update() {
 		y += vy;
+		x += vx;
+		if (x >= 1000) {
+			x = 0;
+		}
 	    vy += FlyAwayGame.G;
 	}
 	

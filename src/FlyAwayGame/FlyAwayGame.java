@@ -19,22 +19,37 @@ public class FlyAwayGame extends BasicGame{
 	private FlyDot flydot;
 	private boolean isStarted;
 	private int score = 0;
+	private int bG_HEIGHT;
+	private int bG_WIDTH;
 	
 	public FlyAwayGame(String title) {
 		super(title);
 	}
 
+	
 	@Override
 	public void render(GameContainer container, Graphics g) throws SlickException {
-		Image background = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/background.png");
-		background.draw(x, -600);
+		bg();
 		flydot.render();
 		g.drawString("" + score, 950, 10);
 	}
 
+
+	private void bg() throws SlickException {
+		bG_HEIGHT = (int) (-600 + FlyDot.y - 120);
+		if (bG_HEIGHT > 2000)
+		{
+			bG_HEIGHT = 2000;
+		}
+		for(int i = 0; i < 20; i++) {
+			Image background = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/bg.png");
+			background.draw(x + 2000*i, bG_HEIGHT);
+		}
+	}
+
 	@Override
 	public void init(GameContainer container) throws SlickException {
-		flydot = new FlyDot(GAME_WIDTH/2, GAME_HEIGHT/2,FLYDOT_JUMP_VY);
+		flydot = new FlyDot(100, 120,FLYDOT_JUMP_VY);
 		isStarted = false;
 	}
 
@@ -44,9 +59,6 @@ public class FlyAwayGame extends BasicGame{
 			flydot.update();
 			x += vx;
 			score += -vx;
-			if (x <= -500) {
-				x = 0;
-			}
 		}
 	}
 	

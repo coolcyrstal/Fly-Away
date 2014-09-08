@@ -32,10 +32,6 @@ public class FlyDot {
 	
 	public void update() {
 		y += vy;
-		x += vx;
-		if (x >= 1000) {
-			x = 0;
-		}
 	    vy += FlyAwayGame.G;
 	}
 	

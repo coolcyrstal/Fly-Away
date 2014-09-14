@@ -1,5 +1,7 @@
 package FlyAwayGame;
 
+import java.awt.im.InputContext;
+
 import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.BasicGame;
 import org.newdawn.slick.GameContainer;
@@ -7,6 +9,7 @@ import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
 import org.newdawn.slick.Input;
 import org.newdawn.slick.SlickException;
+import org.newdawn.slick.util.InputAdapter;
 
 public class FlyAwayGame extends BasicGame{
 
@@ -14,13 +17,12 @@ public class FlyAwayGame extends BasicGame{
 	public static final int GAME_HEIGHT = 600;
 	public static final int vx = -5;
 	public static int x = 0;
-	public static final float FLYDOT_JUMP_VY = 10;
+	public static final float FLYDOT_JUMP_VY = 5;
 	public static final float G = (float) -0.2;
 	private FlyDot flydot;
-	private boolean isStarted;
+	public static boolean isStarted;
 	private int score = 0;
-	private int bG_HEIGHT;
-	private int bG_WIDTH;
+	private AngleBow anglebow;
 	
 	public FlyAwayGame(String title) {
 		super(title);
@@ -31,19 +33,18 @@ public class FlyAwayGame extends BasicGame{
 	public void render(GameContainer container, Graphics g) throws SlickException {
 		bg();
 		flydot.render();
-		g.drawString("" + score, 950, 10);
+		g.drawString("Score : " + score, 850, 10);
+		anglebow.render();
+		if (isStarted) {
+			anglebow.remove();
+		}
 	}
 
 
 	private void bg() throws SlickException {
-		bG_HEIGHT = (int) (-600 + FlyDot.y - 120);
-		if (bG_HEIGHT > 2000)
-		{
-			bG_HEIGHT = 2000;
-		}
 		for(int i = 0; i < 20; i++) {
 			Image background = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/bg.png");
-			background.draw(x + 2000*i, bG_HEIGHT);
+			background.draw(x + 2000*i, -600+flydot.y-120);
 		}
 	}
 
@@ -51,14 +52,38 @@ public class FlyAwayGame extends BasicGame{
 	public void init(GameContainer container) throws SlickException {
 		flydot = new FlyDot(100, 120,FLYDOT_JUMP_VY);
 		isStarted = false;
+		anglebow = new AngleBow(100,120);
 	}
 
 	@Override
 	public void update(GameContainer container, int delta) throws SlickException {
 		if(isStarted) {
-			flydot.update();
+			angleDistanceBeforeStarted();
 			x += vx;
 			score += -vx;
+		}
+		if(flydot.isCollide()) {
+			isStarted = false;
+		}
+		if (container.getInput().isKeyPressed(Input.KEY_ESCAPE)) {
+			container.reinit();
+			score = 0;
+			x = 0;
+		}
+	}
+
+
+	public void angleDistanceBeforeStarted() {
+		if (score <= -anglebow.angle*5) {
+			
+			flydot.y += FLYDOT_JUMP_VY;
+		}
+		if (score <= 600 + anglebow.angle*5) {
+			
+			flydot.x += -vx;
+		}
+		else {
+			flydot.update();
 		}
 	}
 	
@@ -69,6 +94,14 @@ public class FlyAwayGame extends BasicGame{
 		}
 	    if (key == Input.KEY_SPACE) {
 	    	flydot.jump();
+	    }
+	    if (isStarted == false && key == Input.KEY_UP) {
+	    	anglebow.increaseAngle();
+	    	anglebow.update();
+	    }
+	    if (isStarted == false && key == Input.KEY_DOWN) {
+	    	anglebow.decreaseAngle();
+	    	anglebow.update();
 	    }
 	}
 

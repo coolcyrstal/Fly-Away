@@ -8,11 +8,12 @@ public class FlyDot {
 	public static final int WIDTH = 40;
 	public static final int HEIGHT = 40;
 	private Image flyimage;
-	private float x;
-	float y;
+	static float x;
+	static float y;
 	private float vy;
 	private float vx = 5;
 	private float vjump;
+	private AngleBow anglebow = new AngleBow(100,120);
 	
 	public FlyDot(float x, float y, float vjump) throws SlickException {
 	    this.x = x;
@@ -32,7 +33,25 @@ public class FlyDot {
 	
 	public void update() {
 		y += vy;
-	    vy += FlyAwayGame.G;
+		vy += FlyAwayGame.G; 
+	    if (y > 600) {
+	    	y = 600;
+	    }
+	    if (y < 120) {
+	    	y = 120;
+	    }
+	    if (x > 1000) {
+	    	x = 1000;
+	    }
+	    if (y > 400) {
+	    	FlyAwayGame.G = (float) -0.1;
+	    }
+	    else {
+	    	FlyAwayGame.G = (float) -0.2;
+	    }
 	}
 	
+	public boolean isCollide() {
+		return Colision.isCollide(x,y);
+	}
 }

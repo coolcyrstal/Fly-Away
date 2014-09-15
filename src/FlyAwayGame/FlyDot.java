@@ -2,6 +2,7 @@ package FlyAwayGame;
 
 import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
+import org.newdawn.slick.SpriteSheet;
 
 public class FlyDot {
 
@@ -43,7 +44,11 @@ public class FlyDot {
 	    if (x > 1000) {
 	    	x = 1000;
 	    }
-	    if (y > 400) {
+	    change_G_WhenHigh();
+	}
+
+	public void change_G_WhenHigh() {
+		if (y > 400) {
 	    	FlyAwayGame.G = (float) -0.1;
 	    }
 	    else {

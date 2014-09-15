@@ -18,14 +18,15 @@ public class FlyAwayGame extends BasicGame{
 	public static boolean isStarted;
 	public static boolean startGame = false;
 	public static boolean isBounce = false;
+	private FlyDot flydot;
+	private AngleBow anglebow;
+	private Coins coins;
+	private Color color;
 	public static int x = 0;
 	public static float G = (float) -0.2;
-	private FlyDot flydot;
 	private int score = 0;
-	private AngleBow anglebow;
 	private int jumpLimit = 6;
 	private int bounce = 2;
-	private Color color;
 	
 	
 	public FlyAwayGame(String title) {
@@ -69,7 +70,7 @@ public class FlyAwayGame extends BasicGame{
 		color = new Color(255, 255, 255);
 		g.setColor(color);
 		g.drawString("Score : " + score, 850, 10);
-		g.drawString("Jump Limit x " + jumpLimit, 40, 40);
+		g.drawString("Jump Limit x " + jumpLimit, 55, 40);
 	}
 
 
@@ -164,7 +165,7 @@ public class FlyAwayGame extends BasicGame{
 		}
 	    if (key == Input.KEY_SPACE && isStarted == true) {
 	    	jumpLimit();
-	    	if (isBounce = true) {
+	    	if (isBounce == true) {
 	    		isBounce = false;
 	    		bounce = 2;
 	    	}

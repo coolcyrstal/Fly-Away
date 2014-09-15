@@ -42,7 +42,7 @@ public class FlyAwayGame extends BasicGame{
 
 
 	public void gameMenuFunction(GameContainer container, Graphics g) throws SlickException {
-		if (startGame) {
+		if (startGame) { // Press 1 start, 2 menu, 3 exit
 			bg();
 			flydot.render();
 			anglebow.render();
@@ -61,7 +61,7 @@ public class FlyAwayGame extends BasicGame{
 	}
 
 
-	public void stringFunction(Graphics g) throws SlickException {
+	public void stringFunction(Graphics g) throws SlickException { //Set color of string
 		color = new Color(255,0,0);
 		g.setColor(color);
 		g.drawString("2 : Back to Menu", 120, 10);
@@ -83,7 +83,7 @@ public class FlyAwayGame extends BasicGame{
 		}
 	}
 
-	public void jumpPic() throws SlickException {
+	public void jumpPic() throws SlickException { //Picture of jump gauge
 		Image jumppic = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/jump"+jumpLimit+".png");
 		jumppic.draw(20,40);
 	}
@@ -110,7 +110,7 @@ public class FlyAwayGame extends BasicGame{
 			scoreSummary();
 			bounceWhenCollision();
 		}
-		if (container.getInput().isKeyPressed(Input.KEY_ESCAPE)) {
+		if (container.getInput().isKeyPressed(Input.KEY_ESCAPE)) { //Press Esc to restart
 			container.reinit();
 			score = 0;
 			x = 0;
@@ -121,7 +121,7 @@ public class FlyAwayGame extends BasicGame{
 
 	public void bounceWhenCollision() {
 		if(flydot.isCollide()) {
-			if (bounce > 0) {
+			if (bounce > 0) { //Bouncing of character that contain 2 bounce to die
 				flydot.jump();
 				bounce--;
 				isBounce = true;
@@ -135,7 +135,7 @@ public class FlyAwayGame extends BasicGame{
 
 	public void scoreSummary() {
 		score += -vx;
-		if (score % 1200 == 0) {
+		if (score % 1200 == 0) { //Check jumplimit will get increase by 1 if score = 1200*k
 			jumpLimit++;
 			if (jumpLimit > 6) {
 				jumpLimit = 6;
@@ -144,7 +144,7 @@ public class FlyAwayGame extends BasicGame{
 	}
 
 
-	public void angleDistanceBeforeStarted() {
+	public void angleDistanceBeforeStarted() { //Projectile (*-*)^(T-T)
 		if (score <= -anglebow.angle*5) {
 			
 			flydot.y += FLYDOT_JUMP_VY;
@@ -165,7 +165,7 @@ public class FlyAwayGame extends BasicGame{
 		}
 	    if (key == Input.KEY_SPACE && isStarted == true) {
 	    	jumpLimit();
-	    	if (isBounce == true) {
+	    	if (isBounce == true) { //Check bounce when jump bounce will reset to initial value
 	    		isBounce = false;
 	    		bounce = 2;
 	    	}

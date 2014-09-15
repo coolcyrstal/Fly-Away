@@ -14,7 +14,6 @@ public class FlyDot {
 	private float vy;
 	private float vx = 5;
 	private float vjump;
-	private AngleBow anglebow = new AngleBow(100,120);
 	
 	public FlyDot(float x, float y, float vjump) throws SlickException {
 	    this.x = x;

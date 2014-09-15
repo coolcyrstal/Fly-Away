@@ -21,6 +21,8 @@ public class FlyAwayGame extends BasicGame{
 	private int score = 0;
 	private AngleBow anglebow;
 	private int jumpLimit = 6;
+	private int bounce = 2;
+	public static boolean startGame = false;
 	
 	public FlyAwayGame(String title) {
 		super(title);
@@ -29,22 +31,48 @@ public class FlyAwayGame extends BasicGame{
 	
 	@Override
 	public void render(GameContainer container, Graphics g) throws SlickException {
-		bg();
-		flydot.render();
-		g.drawString("Score : " + score, 850, 10);
-		anglebow.render();
-		if (isStarted) {
-			anglebow.remove();
-		}
-		jumpPic();
+		gameMenu(g);
+		gameMenuFunction(container, g);
 	}
 
+
+	public void gameMenuFunction(GameContainer container, Graphics g) throws SlickException {
+		if (startGame) {
+			bg();
+			flydot.render();
+			g.drawString("Score : " + score, 850, 10);
+			g.drawString("2 : Back to Menu", 120, 10);
+			g.drawString("3 : Exit", 300, 10);
+			g.drawString("Esc : Restart Game", 400, 10);
+			anglebow.render();
+			if (isStarted) {
+				anglebow.remove();
+			}
+			jumpPic();
+			g.drawString("Jump Limit x " + jumpLimit, 40, 40);
+		}
+		if (container.getInput().isKeyPressed(Input.KEY_2)) {
+			startGame = false;
+		}
+		if (container.getInput().isKeyPressed(Input.KEY_3)) {
+			container.exit();
+		}
+	}
+
+
+	public void gameMenu(Graphics g) {
+		if (isStarted == false && startGame == false) {
+			g.drawString("Please Select Game Menu", 400, 250);
+			g.drawString("1 : Start Game", 400, 300);
+			g.drawString("2 : Back to Menu Game", 400, 320);
+			g.drawString("3 : Exit Game", 400, 340);
+		}
+	}
 
 	public void jumpPic() throws SlickException {
 		Image jumppic = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/jump"+jumpLimit+".png");
 		jumppic.draw(20,40);
 	}
-
 
 	private void bg() throws SlickException {
 		for(int i = 0; i < 20; i++) {
@@ -66,22 +94,37 @@ public class FlyAwayGame extends BasicGame{
 			angleDistanceBeforeStarted();
 			x += vx;
 			scoreSummary();
-		}
-		if(flydot.isCollide()) {
-			isStarted = false;
+			bounceWhenCollision();
 		}
 		if (container.getInput().isKeyPressed(Input.KEY_ESCAPE)) {
 			container.reinit();
 			score = 0;
 			x = 0;
+			jumpLimit = 6;
+		}
+	}
+
+
+	public void bounceWhenCollision() {
+		if(flydot.isCollide()) {
+			if (bounce > 0) {
+				flydot.jump();
+				bounce--;
+			}
+			else {
+				isStarted = false;
+			}
 		}
 	}
 
 
 	public void scoreSummary() {
 		score += -vx;
-		if (score % 1500 == 0) {
+		if (score % 1200 == 0) {
 			jumpLimit++;
+			if (jumpLimit > 6) {
+				jumpLimit = 6;
+			}
 		}
 	}
 
@@ -105,7 +148,7 @@ public class FlyAwayGame extends BasicGame{
 		if (key == Input.KEY_ENTER) {
 			isStarted = true;
 		}
-	    if (key == Input.KEY_SPACE) {
+	    if (key == Input.KEY_SPACE && isStarted == true) {
 	    	jumpLimit();
 	    }
 	    if (isStarted == false && key == Input.KEY_UP) {
@@ -116,6 +159,9 @@ public class FlyAwayGame extends BasicGame{
 	    	anglebow.decreaseAngle();
 	    	anglebow.update();
 	    }
+	    if (key == Input.KEY_1) {
+	    	startGame = true;
+	    }
 	}
 	
 	public void jumpLimit() {
@@ -125,6 +171,9 @@ public class FlyAwayGame extends BasicGame{
 		}
 		if (jumpLimit > 6) {
 			jumpLimit = 6;
+		}
+		if (jumpLimit < 0) {
+			jumpLimit = 0;
 		}
 	}
 

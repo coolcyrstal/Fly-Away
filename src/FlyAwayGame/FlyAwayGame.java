@@ -43,6 +43,9 @@ public class FlyAwayGame extends BasicGame{
 			g.drawString("You are dead!!!!!", 430, 50);
 			Image rabbit555 = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/rabbit555.png");
 			rabbit555.draw(320,100);
+			color = new Color(0,0,0);
+			g.setColor(color);
+			g.drawString("5555555555555", 550, 250);
 			g.drawString("Your score is " + score, 420, 450);
 		}
 	}
@@ -61,6 +64,7 @@ public class FlyAwayGame extends BasicGame{
 		}
 		if (container.getInput().isKeyPressed(Input.KEY_2)) {
 			startGame = false;
+			isDead = false;
 		}
 		if (container.getInput().isKeyPressed(Input.KEY_3)) {
 			container.exit();

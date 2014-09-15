@@ -2,6 +2,7 @@ package FlyAwayGame;
 
 import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.BasicGame;
+import org.newdawn.slick.Color;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
@@ -13,16 +14,19 @@ public class FlyAwayGame extends BasicGame{
 	public static final int GAME_WIDTH = 1000;
 	public static final int GAME_HEIGHT = 600;
 	public static final int vx = -5;
-	public static int x = 0;
 	public static final float FLYDOT_JUMP_VY = 5;
+	public static boolean isStarted;
+	public static boolean startGame = false;
+	public static boolean isBounce = false;
+	public static int x = 0;
 	public static float G = (float) -0.2;
 	private FlyDot flydot;
-	public static boolean isStarted;
 	private int score = 0;
 	private AngleBow anglebow;
 	private int jumpLimit = 6;
 	private int bounce = 2;
-	public static boolean startGame = false;
+	private Color color;
+	
 	
 	public FlyAwayGame(String title) {
 		super(title);
@@ -40,16 +44,12 @@ public class FlyAwayGame extends BasicGame{
 		if (startGame) {
 			bg();
 			flydot.render();
-			g.drawString("Score : " + score, 850, 10);
-			g.drawString("2 : Back to Menu", 120, 10);
-			g.drawString("3 : Exit", 300, 10);
-			g.drawString("Esc : Restart Game", 400, 10);
 			anglebow.render();
 			if (isStarted) {
 				anglebow.remove();
 			}
 			jumpPic();
-			g.drawString("Jump Limit x " + jumpLimit, 40, 40);
+			stringFunction(g);
 		}
 		if (container.getInput().isKeyPressed(Input.KEY_2)) {
 			startGame = false;
@@ -57,6 +57,19 @@ public class FlyAwayGame extends BasicGame{
 		if (container.getInput().isKeyPressed(Input.KEY_3)) {
 			container.exit();
 		}
+	}
+
+
+	public void stringFunction(Graphics g) throws SlickException {
+		color = new Color(255,0,0);
+		g.setColor(color);
+		g.drawString("2 : Back to Menu", 120, 10);
+		g.drawString("3 : Exit", 300, 10);
+		g.drawString("Esc : Restart Game", 400, 10);
+		color = new Color(255, 255, 255);
+		g.setColor(color);
+		g.drawString("Score : " + score, 850, 10);
+		g.drawString("Jump Limit x " + jumpLimit, 40, 40);
 	}
 
 
@@ -110,6 +123,7 @@ public class FlyAwayGame extends BasicGame{
 			if (bounce > 0) {
 				flydot.jump();
 				bounce--;
+				isBounce = true;
 			}
 			else {
 				isStarted = false;
@@ -150,6 +164,10 @@ public class FlyAwayGame extends BasicGame{
 		}
 	    if (key == Input.KEY_SPACE && isStarted == true) {
 	    	jumpLimit();
+	    	if (isBounce = true) {
+	    		isBounce = false;
+	    		bounce = 2;
+	    	}
 	    }
 	    if (isStarted == false && key == Input.KEY_UP) {
 	    	anglebow.increaseAngle();

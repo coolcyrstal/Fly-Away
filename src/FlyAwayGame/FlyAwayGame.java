@@ -7,7 +7,10 @@ import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
 import org.newdawn.slick.Input;
+import org.newdawn.slick.ShapeFill;
 import org.newdawn.slick.SlickException;
+import org.newdawn.slick.fills.GradientFill;
+import org.newdawn.slick.geom.Rectangle;
 
 public class FlyAwayGame extends BasicGame{
 
@@ -23,6 +26,7 @@ public class FlyAwayGame extends BasicGame{
 	private AngleBow anglebow;
 	private Coins coins;
 	private Color color;
+	private Color greyblack = new Color(20,20,20);
 	public static int x = 0;
 	public static float G = (float) -0.2;
 	private int score = 0;
@@ -39,12 +43,18 @@ public class FlyAwayGame extends BasicGame{
 	public void render(GameContainer container, Graphics g) throws SlickException {
 		gameMenu(g);
 		gameMenuFunction(container, g);
+		showWhenDead(g);
+	}
+
+
+	public void showWhenDead(Graphics g) throws SlickException {
 		if (isDead == true) {
+			Rectangle box = new Rectangle(200, 30, 600, 500);
+			ShapeFill fillBlack = new GradientFill(200, 30, greyblack, 800, 530, greyblack);
+			g.fill(box, fillBlack);
 			g.drawString("You are dead!!!!!", 430, 50);
 			Image rabbit555 = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/rabbit555.png");
 			rabbit555.draw(320,100);
-			color = new Color(0,0,0);
-			g.setColor(color);
 			g.drawString("5555555555555", 550, 250);
 			g.drawString("Your score is " + score, 420, 450);
 		}

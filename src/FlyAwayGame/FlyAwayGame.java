@@ -18,6 +18,7 @@ public class FlyAwayGame extends BasicGame{
 	public static boolean isStarted;
 	public static boolean startGame = false;
 	public static boolean isBounce = false;
+	public static boolean isDead = false;
 	private FlyDot flydot;
 	private AngleBow anglebow;
 	private Coins coins;
@@ -38,6 +39,12 @@ public class FlyAwayGame extends BasicGame{
 	public void render(GameContainer container, Graphics g) throws SlickException {
 		gameMenu(g);
 		gameMenuFunction(container, g);
+		if (isDead == true) {
+			g.drawString("You are dead!!!!!", 430, 50);
+			Image rabbit555 = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/rabbit555.png");
+			rabbit555.draw(320,100);
+			g.drawString("Your score is " + score, 420, 450);
+		}
 	}
 
 
@@ -75,7 +82,7 @@ public class FlyAwayGame extends BasicGame{
 
 
 	public void gameMenu(Graphics g) {
-		if (isStarted == false && startGame == false) {
+		if (isStarted == false && startGame == false && isDead == false) {
 			g.drawString("Please Select Game Menu", 400, 250);
 			g.drawString("1 : Start Game", 400, 300);
 			g.drawString("2 : Back to Menu Game", 400, 320);
@@ -115,6 +122,7 @@ public class FlyAwayGame extends BasicGame{
 			score = 0;
 			x = 0;
 			jumpLimit = 6;
+			isDead = false;
 		}
 	}
 
@@ -128,6 +136,7 @@ public class FlyAwayGame extends BasicGame{
 			}
 			else {
 				isStarted = false;
+				isDead = true;
 			}
 		}
 	}

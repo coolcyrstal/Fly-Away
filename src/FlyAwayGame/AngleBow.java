@@ -9,7 +9,7 @@ public class AngleBow{
 	private Image anglebow;
 	private int WIDTH = 200;
 	private int HEIGHT = 120;
-	int angle = -10;
+	int angle = -45;
 	private int add;
 
 	public AngleBow(float x, float y) throws SlickException {

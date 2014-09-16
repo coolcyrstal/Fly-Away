@@ -22,6 +22,7 @@ public class FlyAwayGame extends BasicGame{
 	public static boolean startGame = false;
 	public static boolean isBounce = false;
 	public static boolean isDead = false;
+	public static boolean howToPlay = false;
 	private FlyDot flydot;
 	private AngleBow anglebow;
 	private Coins coins;
@@ -43,7 +44,23 @@ public class FlyAwayGame extends BasicGame{
 	public void render(GameContainer container, Graphics g) throws SlickException {
 		gameMenu(g);
 		gameMenuFunction(container, g);
+		howToPlay(g);
 		showWhenDead(g);
+	}
+
+
+	public void howToPlay(Graphics g) throws SlickException {
+		if (howToPlay && startGame == false) {
+			g.drawString("How To Play", 450, 100);
+			g.drawString("1. When you select start game you will a bow.", 100, 160);
+			Image bow = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/AngleBow.png");
+			bow.setRotation(-45);
+			bow.draw(550, 80, 80, 80);
+			g.drawString("2. You should press up/down key to change angle. ", 100, 180);
+			g.drawString("3. Press enter key to start.", 100, 200);
+			g.drawString("Key config", 450, 250);
+			g.drawString("Spacebar : jump", 100, 300);
+		}
 	}
 
 
@@ -62,7 +79,7 @@ public class FlyAwayGame extends BasicGame{
 
 
 	public void gameMenuFunction(GameContainer container, Graphics g) throws SlickException {
-		if (startGame) { // Press 1 start, 2 menu, 3 exit
+		if (startGame) { // Press 1 start, 2 menu, 3 exit 4 how to play
 			bg();
 			flydot.render();
 			anglebow.render();
@@ -75,9 +92,13 @@ public class FlyAwayGame extends BasicGame{
 		if (container.getInput().isKeyPressed(Input.KEY_2)) {
 			startGame = false;
 			isDead = false;
+			howToPlay = false;
 		}
 		if (container.getInput().isKeyPressed(Input.KEY_3)) {
 			container.exit();
+		}
+		if (container.getInput().isKeyPressed(Input.KEY_4)) {
+			howToPlay = true;
 		}
 	}
 
@@ -96,11 +117,12 @@ public class FlyAwayGame extends BasicGame{
 
 
 	public void gameMenu(Graphics g) {
-		if (isStarted == false && startGame == false && isDead == false) {
+		if (isStarted == false && startGame == false && isDead == false && howToPlay == false) {
 			g.drawString("Please Select Game Menu", 400, 250);
 			g.drawString("1 : Start Game", 400, 300);
 			g.drawString("2 : Back to Menu Game", 400, 320);
 			g.drawString("3 : Exit Game", 400, 340);
+			g.drawString("4 : How To Play", 400, 360);
 		}
 	}
 

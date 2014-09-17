@@ -60,7 +60,7 @@ public class FlyAwayGame extends BasicGame{
 			g.drawString("3. Press enter key to start.", 100, 200);
 			g.drawString("Key config", 450, 250);
 			g.drawString("Spacebar : jump", 100, 300);
-			g.drawString("Press key_2 back to menu game", 100, 500);
+			g.drawString("Press key_2 back to menu game or key_1 to start game", 100, 500);
 		}
 	}
 
@@ -96,7 +96,7 @@ public class FlyAwayGame extends BasicGame{
 			isDead = false;
 			howToPlay = false;
 		}
-		if (container.getInput().isKeyPressed(Input.KEY_3)) {
+		if (container.getInput().isKeyPressed(Input.KEY_3) && howToPlay == false) {
 			container.exit();
 		}
 		if (container.getInput().isKeyPressed(Input.KEY_4)) {
@@ -182,13 +182,17 @@ public class FlyAwayGame extends BasicGame{
 	}
 
 
-	public void scoreSummary() {
+	public void scoreSummary() throws SlickException {
 		score += -vx;
 		if (score % 1200 == 0) { //Check jumplimit will get increase by 1 if score = 1200*k
 			jumpLimit++;
 			if (jumpLimit > 6) {
 				jumpLimit = 6;
 			}
+		}
+		if (coins.isCollide()) {
+			score += 500;
+			coins.destroyCoins();
 		}
 	}
 

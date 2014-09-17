@@ -19,7 +19,7 @@ public class Coins {
 	}
 	
 	public void render() {
-		coins.draw(x,y);
+		coins.draw(x,y+FlyDot.y-120);
 	}
 	
 	public float randomCoinPosition() {
@@ -29,9 +29,16 @@ public class Coins {
 	
 	public void update() {
 		x += FlyAwayGame.vx;
-		y += FlyDot.y;
-		if (x == -100) {
+		if (x < -100) {
 			x = 1100;
 		}
+	}
+	
+	public boolean isCollide() {
+		return Colision.isCollideCoins(x, y);
+	}
+	
+	public void destroyCoins() throws SlickException {
+		coins.destroy();
 	}
 }

@@ -25,12 +25,12 @@ public class FlyAwayGame extends BasicGame{
 	public static boolean howToPlay = false;
 	private FlyDot flydot;
 	private AngleBow anglebow;
-	private Coins coins;
 	private Color color;
+	private Coins coins; 
 	private Color greyblack = new Color(20,20,20);
 	public static int x = 0;
 	public static float G = (float) -0.2;
-	private int score = 0;
+	public static int score = 0;
 	private int jumpLimit = 6;
 	private int bounce = 2;
 	
@@ -60,6 +60,7 @@ public class FlyAwayGame extends BasicGame{
 			g.drawString("3. Press enter key to start.", 100, 200);
 			g.drawString("Key config", 450, 250);
 			g.drawString("Spacebar : jump", 100, 300);
+			g.drawString("Press key_2 back to menu game", 100, 500);
 		}
 	}
 
@@ -88,6 +89,7 @@ public class FlyAwayGame extends BasicGame{
 			}
 			jumpPic();
 			stringFunction(g);
+			coins.render();
 		}
 		if (container.getInput().isKeyPressed(Input.KEY_2)) {
 			startGame = false;
@@ -143,6 +145,7 @@ public class FlyAwayGame extends BasicGame{
 		flydot = new FlyDot(100, 120,FLYDOT_JUMP_VY);
 		isStarted = false;
 		anglebow = new AngleBow(100,120);
+		coins = new Coins(900, 0);
 	}
 
 	@Override
@@ -152,6 +155,7 @@ public class FlyAwayGame extends BasicGame{
 			x += vx;
 			scoreSummary();
 			bounceWhenCollision();
+			coins.update();
 		}
 		if (container.getInput().isKeyPressed(Input.KEY_ESCAPE)) { //Press Esc to restart
 			container.reinit();

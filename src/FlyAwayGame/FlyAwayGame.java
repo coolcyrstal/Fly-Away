@@ -163,6 +163,7 @@ public class FlyAwayGame extends BasicGame{
 			x = 0;
 			jumpLimit = 6;
 			isDead = false;
+			bounce = 2;
 		}
 	}
 
@@ -184,7 +185,7 @@ public class FlyAwayGame extends BasicGame{
 
 	public void scoreSummary() throws SlickException {
 		score += -vx;
-		if (score % 1200 == 0) { //Check jumplimit will get increase by 1 if score = 1200*k
+		if (score % 1500 == 0) { //Check jumplimit will get increase by 1 if score = 1200*k
 			jumpLimit++;
 			if (jumpLimit > 6) {
 				jumpLimit = 6;
@@ -192,18 +193,16 @@ public class FlyAwayGame extends BasicGame{
 		}
 		if (coins.isCollide()) {
 			score += 500;
-			coins.destroyCoins();
+			//coins.destroyCoins();
 		}
 	}
 
 
 	public void angleDistanceBeforeStarted() { //Projectile (*-*)^(T-T)
 		if (score <= -anglebow.angle*5) {
-			
 			flydot.y += FLYDOT_JUMP_VY;
 		}
 		if (score <= 600 + anglebow.angle*5) {
-			
 			flydot.x += -vx;
 		}
 		else {
@@ -218,7 +217,7 @@ public class FlyAwayGame extends BasicGame{
 		}
 	    if (key == Input.KEY_SPACE && isStarted == true) {
 	    	jumpLimit();
-	    	if (isBounce == true) { //Check bounce when jump bounce will reset to initial value
+	    	if (isBounce == true && jumpLimit > 0) { //Check bounce when jump bounce will reset to initial value
 	    		isBounce = false;
 	    		bounce = 2;
 	    	}

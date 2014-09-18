@@ -24,12 +24,20 @@ public class Coins {
 	
 	public float randomCoinPosition() {
 		Random random = new Random();
-		return this.y = random.nextInt(400);
+		this.y = random.nextInt(600);
+		if (this.y >= 480) {
+			this.y = 200;
+		}
+		if (this.y >= 250 && this.y <= 400) {
+			this.y -= 50;
+		}
+		return this.y;
 	}
 	
 	public void update() {
 		x += FlyAwayGame.vx;
 		if (x < -100) {
+			randomCoinPosition();
 			x = 1100;
 		}
 	}

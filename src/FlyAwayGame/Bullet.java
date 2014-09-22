@@ -34,6 +34,9 @@ public class Bullet {
 		if (x <= -50) {
 			randomBulletPosition();
 			x += 2050 - fBullet*50; 
+			if (x <= 1000) {
+				x = 1000;
+			}
 			fBullet++;
 		}
 	}

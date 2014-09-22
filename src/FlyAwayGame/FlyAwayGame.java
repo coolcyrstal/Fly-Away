@@ -27,15 +27,16 @@ public class FlyAwayGame extends BasicGame{
 	private AngleBow anglebow;
 	private Color color;
 	private Coins coins; 
-	private Bullet bullet;
+	private Bullet[] bullets;
 	private Color greyblack = new Color(20,20,20);
 	public static int x = 0;
 	public static float G = (float) -0.2;
 	public static int score = 0;
 	public static int countScore = 1;
 	public static int jumpLimit = 6;
-	private int bounce = 2;
+	public static int BULLET_COUNT = 1;
 	public static int heart = 2;
+	private int bounce = 2;
 	
 	
 	public FlyAwayGame(String title) {
@@ -95,7 +96,9 @@ public class FlyAwayGame extends BasicGame{
 			jumpPic();
 			stringFunction(g);
 			coins.render();
-			bullet.render();
+			for (Bullet bullet : bullets) {
+				bullet.render();
+			}
 		}
 		if (container.getInput().isKeyPressed(Input.KEY_2)) {
 			startGame = false;
@@ -155,7 +158,15 @@ public class FlyAwayGame extends BasicGame{
 		isStarted = false;
 		anglebow = new AngleBow(100,120);
 		coins = new Coins(900, 0);
-		bullet = new Bullet(2000, 0);
+		initBullets();
+	}
+
+
+	public void initBullets() throws SlickException {
+		bullets = new Bullet[BULLET_COUNT];
+		for (int i = 0; i < BULLET_COUNT; i++) {
+			bullets[i] = new Bullet(2000 + i*500, 0);
+		}
 	}
 
 	
@@ -167,7 +178,9 @@ public class FlyAwayGame extends BasicGame{
 			scoreSummary();
 			bounceWhenCollision();
 			coins.update();
-			bullet.update();
+			for (Bullet bullet : bullets) {
+				bullet.update();
+			}
 		}
 		if (container.getInput().isKeyPressed(Input.KEY_ESCAPE)) { //Press Esc to restart
 			container.reinit();
@@ -197,24 +210,46 @@ public class FlyAwayGame extends BasicGame{
 
 	public void scoreSummary() throws SlickException {
 		score += -vx;
-		if (score - 1500*countScore >= 0) { //Check jumplimit will get increase by 1 if score = 1500*k
+		increaseJumpLimitWhenScoreUp();
+		if (coins.isCollide()) {
+			coins.x += 1000;
+		}
+		checkBulletAttack();
+		increaseBulletWhenGetHighScore();
+	}
+
+
+	public void increaseBulletWhenGetHighScore() {
+		if (score >= 4000) {
+			BULLET_COUNT = 2;
+			if (score >= 7500) {
+				BULLET_COUNT = 3;
+			}
+		}
+	}
+
+
+	public void increaseJumpLimitWhenScoreUp() {
+		if (score - 1500*countScore >= 0) { //Check jump limit will get increase by 1 if score = 1500*k
 			countScore++;
 			jumpLimit++;
 			if (jumpLimit > 6) {
 				jumpLimit = 6;
 			}
 		}
-		if (coins.isCollide()) {
-			coins.x += 1000;
-		}
-		if (bullet.isCollide()) {
-			bullet.x += 2000;
-			heart--;
-			if (heart == 1) {
-				isStarted = false;
-				isDead = true;
+	}
+
+
+	public void checkBulletAttack() {
+		for (int i = 0; i < BULLET_COUNT; i++) {
+			if (bullets[i].isCollide()) {
+				bullets[i].x += 2000;
+				heart--;
+				if (heart == 0) { //check heart life when life == 0, player will died
+					isStarted = false;
+					isDead = true;
+				}
 			}
-			
 		}
 	}
 

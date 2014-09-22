@@ -10,8 +10,9 @@ public class Colision {
 	}
 	
 	static boolean isCollideCoins(float x, float y) {
-		//System.out.println(FlyDot.x + " : " + x + "|||" + FlyDot.y + " : " + y);
-		if ((FlyDot.x < x+60 && FlyDot.x > x) && (FlyDot.y < y+60 && FlyDot.y > y )) {
+		if ((FlyDot.x +30 <= x+60 && FlyDot.x+30 >= x) && (FlyDot.y+30 <= 600-y+60 && FlyDot.y+30 >= 600-y)) {
+			System.out.println(FlyDot.x + " : " + x + "|||" + FlyDot.y + " : " + y);
+			FlyAwayGame.score += 500;
 			return true;
 		}
 		else return false;

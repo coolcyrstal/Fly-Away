@@ -31,7 +31,7 @@ public class FlyAwayGame extends BasicGame{
 	public static int x = 0;
 	public static float G = (float) -0.2;
 	public static int score = 0;
-	private int jumpLimit = 6;
+	public static int jumpLimit = 6;
 	private int bounce = 2;
 	
 	
@@ -51,16 +51,18 @@ public class FlyAwayGame extends BasicGame{
 
 	public void howToPlay(Graphics g) throws SlickException {
 		if (howToPlay && startGame == false) {
-			g.drawString("How To Play", 450, 100);
-			g.drawString("1. When you select start game you will a bow.", 100, 160);
+			g.drawString("How To Play", 450, 80);
+			g.drawString("--------------------------------------" + 
+						"---------------------------------------" + "--------------", 80, 100);
+			g.drawString("Before Start Game", 100, 150);
 			Image bow = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/AngleBow.png");
 			bow.setRotation(-45);
-			bow.draw(550, 80, 80, 80);
-			g.drawString("2. You should press up/down key to change angle. ", 100, 180);
-			g.drawString("3. Press enter key to start.", 100, 200);
-			g.drawString("Key config", 450, 250);
+			bow.draw(600, 100, 80, 80);
+			g.drawString("1. You should press up/down key to change angle of bow ", 100, 180);
+			g.drawString("2. Press 'Enter' key to get start.", 100, 200);
+			g.drawString("Key && Skill in Game", 100, 270);
 			g.drawString("Spacebar : jump", 100, 300);
-			g.drawString("Press key_2 back to menu game or key_1 to start game", 100, 500);
+			g.drawString("Please press '2' to get back menu game or '1' to start game", 100, 500);
 		}
 	}
 
@@ -128,11 +130,13 @@ public class FlyAwayGame extends BasicGame{
 		}
 	}
 
+	
 	public void jumpPic() throws SlickException { //Picture of jump gauge
 		Image jumppic = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/jump"+jumpLimit+".png");
 		jumppic.draw(20,40);
 	}
 
+	
 	private void bg() throws SlickException {
 		for(int i = 0; i < 20; i++) {
 			Image background = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/bg.png");
@@ -140,6 +144,7 @@ public class FlyAwayGame extends BasicGame{
 		}
 	}
 
+	
 	@Override
 	public void init(GameContainer container) throws SlickException {
 		flydot = new FlyDot(100, 120,FLYDOT_JUMP_VY);
@@ -148,6 +153,7 @@ public class FlyAwayGame extends BasicGame{
 		coins = new Coins(900, 0);
 	}
 
+	
 	@Override
 	public void update(GameContainer container, int delta) throws SlickException {
 		if(isStarted) {
@@ -185,15 +191,14 @@ public class FlyAwayGame extends BasicGame{
 
 	public void scoreSummary() throws SlickException {
 		score += -vx;
-		if (score % 1500 == 0) { //Check jumplimit will get increase by 1 if score = 1200*k
+		if (score % 1500 == 0 && score >= 1500) { //Check jumplimit will get increase by 1 if score = 1500*k
 			jumpLimit++;
 			if (jumpLimit > 6) {
 				jumpLimit = 6;
 			}
 		}
 		if (coins.isCollide()) {
-			score += 500;
-			//coins.destroyCoins();
+			coins.x += 1000;
 		}
 	}
 
@@ -201,6 +206,9 @@ public class FlyAwayGame extends BasicGame{
 	public void angleDistanceBeforeStarted() { //Projectile (*-*)^(T-T)
 		if (score <= -anglebow.angle*5) {
 			flydot.y += FLYDOT_JUMP_VY;
+			if (-anglebow.angle*5 < 600 + anglebow.angle*5) {
+				flydot.y += -1;
+			}
 		}
 		if (score <= 600 + anglebow.angle*5) {
 			flydot.x += -vx;
@@ -212,14 +220,16 @@ public class FlyAwayGame extends BasicGame{
 	
 	@Override
 	public void keyPressed(int key, char c) {
-		if (key == Input.KEY_ENTER) {
+		if (key == Input.KEY_ENTER && isDead == false) {
 			isStarted = true;
 		}
 	    if (key == Input.KEY_SPACE && isStarted == true) {
-	    	jumpLimit();
-	    	if (isBounce == true && jumpLimit > 0) { //Check bounce when jump bounce will reset to initial value
-	    		isBounce = false;
-	    		bounce = 2;
+	    	if (jumpLimit > 0) {
+	    		jumpLimit();
+		    	if (isBounce == true) { //Check bounce when jump bounce will reset to initial value
+		    		isBounce = false;
+		    		bounce = 2;
+		    	}
 	    	}
 	    }
 	    if (isStarted == false && key == Input.KEY_UP) {

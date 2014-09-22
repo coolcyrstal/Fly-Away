@@ -39,8 +39,4 @@ public class Coins {
 	public boolean isCollide() {
 		return Colision.isCollideCoins(x, y+FlyDot.y-120);
 	}
-	
-	public void destroyCoins() throws SlickException {
-		coins.destroy();
-	}
 }

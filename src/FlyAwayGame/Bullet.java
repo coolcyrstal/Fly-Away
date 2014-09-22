@@ -7,9 +7,10 @@ import org.newdawn.slick.SlickException;
 
 public class Bullet {
 
-	private float x;
+	public static float x;
 	private float y;
 	private Image bullet;
+	private float fBullet = 0;
 	
 	public Bullet(float x, float y) throws SlickException {
 		this.x = x;
@@ -29,9 +30,15 @@ public class Bullet {
 	}
 	
 	public void update() {
-		x += FlyAwayGame.vx;
-		if (FlyAwayGame.score >= 2000) {
+		x += -20;
+		if (x <= -50) {
 			randomBulletPosition();
+			x += 2050 - fBullet*50; 
+			fBullet++;
 		}
+	}
+	
+	public boolean isCollide() {
+		return Colision.isCollideBullet(x, y+FlyDot.y-120);
 	}
 }

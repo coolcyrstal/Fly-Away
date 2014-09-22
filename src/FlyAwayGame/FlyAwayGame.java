@@ -93,7 +93,7 @@ public class FlyAwayGame extends BasicGame{
 			if (isStarted) {
 				anglebow.remove();
 			}
-			jumpPic();
+			jumpAndHeartPic();
 			stringFunction(g);
 			coins.render();
 			for (Bullet bullet : bullets) {
@@ -138,9 +138,11 @@ public class FlyAwayGame extends BasicGame{
 	}
 
 	
-	public void jumpPic() throws SlickException { //Picture of jump gauge
-		Image jumppic = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/jump"+jumpLimit+".png");
+	public void jumpAndHeartPic() throws SlickException { //Picture of jump gauge
+		Image jumppic = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/jump" + jumpLimit + ".png");
 		jumppic.draw(20,40);
+		Image heartPic = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/heart" + heart + ".png");
+		heartPic.draw(20,80);
 	}
 
 	
@@ -184,12 +186,18 @@ public class FlyAwayGame extends BasicGame{
 		}
 		if (container.getInput().isKeyPressed(Input.KEY_ESCAPE)) { //Press Esc to restart
 			container.reinit();
-			score = 0;
-			x = 0;
-			jumpLimit = 6;
-			isDead = false;
-			bounce = 2;
+			resetInitialValue();
 		}
+	}
+
+
+	public void resetInitialValue() {
+		score = 0;
+		x = 0;
+		jumpLimit = 6;
+		isDead = false;
+		bounce = 2;
+		heart = 2;
 	}
 
 
@@ -215,17 +223,6 @@ public class FlyAwayGame extends BasicGame{
 			coins.x += 1000;
 		}
 		checkBulletAttack();
-		increaseBulletWhenGetHighScore();
-	}
-
-
-	public void increaseBulletWhenGetHighScore() {
-		if (score >= 4000) {
-			BULLET_COUNT = 2;
-			if (score >= 7500) {
-				BULLET_COUNT = 3;
-			}
-		}
 	}
 
 

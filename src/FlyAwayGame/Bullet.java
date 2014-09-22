@@ -20,7 +20,7 @@ public class Bullet {
 	}
 	
 	public void render() {
-		bullet.draw(x,y+FlyDot.y-120);
+		bullet.draw(x,y+FlyDot.y-200);
 	}
 	
 	public float randomBulletPosition() {
@@ -30,7 +30,7 @@ public class Bullet {
 	}
 	
 	public void update() {
-		x += -20;
+		x += -15;
 		if (x <= -50) {
 			randomBulletPosition();
 			x += 2050 - fBullet*50; 

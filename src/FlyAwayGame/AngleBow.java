@@ -33,6 +33,10 @@ public class AngleBow{
 	
 	public void update() {
 		angle += add;
+		limitAngle();
+	}
+
+	public void limitAngle() {
 		if (angle < -80) {
 			angle = -80;
 		}

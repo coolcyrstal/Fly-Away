@@ -27,7 +27,7 @@ public class FlyAwayGame extends BasicGame{
 	private AngleBow anglebow;
 	private Color color;
 	private Coins coins; 
-	private Bullet[] bullets;
+	private Bullet bullet;
 	private Color greyblack = new Color(20,20,20);
 	public static int x = 0;
 	public static float G = (float) -0.2;
@@ -96,9 +96,7 @@ public class FlyAwayGame extends BasicGame{
 			jumpAndHeartPic();
 			stringFunction(g);
 			coins.render();
-			for (Bullet bullet : bullets) {
-				bullet.render();
-			}
+			bullet.render();
 		}
 		if (container.getInput().isKeyPressed(Input.KEY_2)) {
 			startGame = false;
@@ -138,7 +136,7 @@ public class FlyAwayGame extends BasicGame{
 	}
 
 	
-	public void jumpAndHeartPic() throws SlickException { //Picture of jump gauge
+	public void jumpAndHeartPic() throws SlickException { //Picture of jump and heart gauge
 		Image jumppic = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/jump" + jumpLimit + ".png");
 		jumppic.draw(20,40);
 		Image heartPic = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/heart" + heart + ".png");
@@ -160,17 +158,9 @@ public class FlyAwayGame extends BasicGame{
 		isStarted = false;
 		anglebow = new AngleBow(100,120);
 		coins = new Coins(900, 0);
-		initBullets();
+		bullet = new Bullet(2000, 0);
 	}
-
-
-	public void initBullets() throws SlickException {
-		bullets = new Bullet[BULLET_COUNT];
-		for (int i = 0; i < BULLET_COUNT; i++) {
-			bullets[i] = new Bullet(2000 + i*500, 0);
-		}
-	}
-
+		
 	
 	@Override
 	public void update(GameContainer container, int delta) throws SlickException {
@@ -180,9 +170,7 @@ public class FlyAwayGame extends BasicGame{
 			scoreSummary();
 			bounceWhenCollision();
 			coins.update();
-			for (Bullet bullet : bullets) {
-				bullet.update();
-			}
+			bullet.update();
 		}
 		if (container.getInput().isKeyPressed(Input.KEY_ESCAPE)) { //Press Esc to restart
 			container.reinit();
@@ -198,6 +186,7 @@ public class FlyAwayGame extends BasicGame{
 		isDead = false;
 		bounce = 2;
 		heart = 2;
+		countScore = 1;
 	}
 
 
@@ -219,10 +208,18 @@ public class FlyAwayGame extends BasicGame{
 	public void scoreSummary() throws SlickException {
 		score += -vx;
 		increaseJumpLimitWhenScoreUp();
+		checkGetCoins();
+		checkBulletAttack();
+	}
+
+
+	public void checkGetCoins() {
 		if (coins.isCollide()) {
 			coins.x += 1000;
 		}
-		checkBulletAttack();
+		if (coins.isCollide2() && score >= 4000) {
+			coins.x2 += 1200;
+		}
 	}
 
 
@@ -238,14 +235,12 @@ public class FlyAwayGame extends BasicGame{
 
 
 	public void checkBulletAttack() {
-		for (int i = 0; i < BULLET_COUNT; i++) {
-			if (bullets[i].isCollide()) {
-				bullets[i].x += 2000;
-				heart--;
-				if (heart == 0) { //check heart life when life == 0, player will died
-					isStarted = false;
-					isDead = true;
-				}
+		if (bullet.isCollide()) {
+			bullet.x += 2000;
+			heart--;
+			if (heart == 0) { //check heart life when life == 0, player will died
+				isStarted = false;
+				isDead = true;
 			}
 		}
 	}
@@ -272,13 +267,7 @@ public class FlyAwayGame extends BasicGame{
 			isStarted = true;
 		}
 	    if (key == Input.KEY_SPACE && isStarted == true) {
-	    	if (jumpLimit > 0) {
-	    		jumpLimit();
-		    	if (isBounce == true) { //Check bounce when jump bounce will reset to initial value
-		    		isBounce = false;
-		    		bounce = 2;
-		    	}
-	    	}
+	    	jump();
 	    }
 	    if (isStarted == false && key == Input.KEY_UP) {
 	    	anglebow.increaseAngle();
@@ -291,6 +280,17 @@ public class FlyAwayGame extends BasicGame{
 	    if (key == Input.KEY_1) {
 	    	startGame = true;
 	    }
+	}
+
+
+	public void jump() {
+		if (jumpLimit > 0) {
+			jumpLimit();
+			if (isBounce == true) { //Check bounce when jump bounce will reset to initial value
+				isBounce = false;
+				bounce = 2;
+			}
+		}
 	}
 	
 	public void jumpLimit() {

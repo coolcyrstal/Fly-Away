@@ -40,7 +40,12 @@ public class FlyDot {
 	public void update() {
 		y += vy;
 		vy += FlyAwayGame.G; 
-	    if (y > 600) {
+	    limitOfXAndY();
+	    change_G_WhenHigh();
+	}
+
+	public void limitOfXAndY() {
+		if (y > 600) {
 	    	y = 600;
 	    }
 	    if (y < 120) {
@@ -49,7 +54,6 @@ public class FlyDot {
 	    if (x > 1000) {
 	    	x = 1000;
 	    }
-	    change_G_WhenHigh();
 	}
 
 	public void change_G_WhenHigh() {

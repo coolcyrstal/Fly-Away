@@ -237,11 +237,24 @@ public class FlyAwayGame extends BasicGame{
 	public void checkBulletAttack() {
 		if (bullet.isCollide()) {
 			bullet.x += 2000;
-			heart--;
-			if (heart == 0) { //check heart life when life == 0, player will died
-				isStarted = false;
-				isDead = true;
-			}
+			heartLifeWhenAttack();
+		}
+		if (bullet.isCollide2() && score >= 4000) {
+			bullet.x2 += 2300;
+			heartLifeWhenAttack();
+		}
+		if (bullet.isCollide3() && score >= 8000) {
+			bullet.x3 += 2600;
+			heartLifeWhenAttack();
+		}
+	}
+
+
+	public void heartLifeWhenAttack() {
+		heart--;
+		if (heart == 0) { //check heart life when life == 0, player will died
+			isStarted = false;
+			isDead = true;
 		}
 	}
 

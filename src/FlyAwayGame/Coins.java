@@ -34,25 +34,17 @@ public class Coins {
 	}
 	
 	public void update() {
-		coin1();
-		coin2();
-	}
-
-	public void coin2() {
+		x += FlyAwayGame.vx;
+		if (x < -100) {
+			randomCoinPosition();
+			x = 1100;
+		}
 		if (FlyAwayGame.score >= 4000) {
 			x2 += FlyAwayGame.vx;
 		}
 		if (x2 < -100) {
 			randomCoinPosition();
 			x = 1200;
-		}
-	}
-
-	public void coin1() {
-		x += FlyAwayGame.vx;
-		if (x < -100) {
-			randomCoinPosition();
-			x = 1100;
 		}
 	}
 	

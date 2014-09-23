@@ -11,6 +11,8 @@ public class Bullet {
 	public static float x2;
 	public static float x3;
 	private float y;
+	private float y2;
+	private float y3;
 	private Image bullet;
 	
 	public Bullet(float x, float y) throws SlickException {
@@ -18,44 +20,49 @@ public class Bullet {
 		this.x2 = x + 300;
 		this.x3 = x + 600;
 		this.y = y;
-		randomBulletPosition();
+		this.y2 = y;
+		this.y3 = y;
+		randomBulletPosition(y);
 	    bullet = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/firebullet.png");
 	}
 	
 	public void render() {
 		bullet.draw(x,y+FlyDot.y-120);
 		if (FlyAwayGame.score >= 4000) {
-			bullet.draw(x2,y+FlyDot.y);
+			bullet.draw(x2,y2+FlyDot.y);
 		}
 		if (FlyAwayGame.score >= 8000) {
-			bullet.draw(x3,y+FlyDot.y-240);
+			bullet.draw(x3,y3+FlyDot.y-240);
 		}
 	}
 	
-	public float randomBulletPosition() {
+	public float randomBulletPosition(float y) {
 		Random random = new Random();
-		this.y = random.nextInt(400);
-		return this.y;
+		y = random.nextInt(400);
+		return y;
 	}
 	
 	public void update() {
 		x += -15;
 		if (x < -50) {
-			randomBulletPosition();
+			randomBulletPosition(y);
 			x = 2000;
 		}
 		if (FlyAwayGame.score >= 4000) {
-			x2 += -15;
+			if (FlyAwayGame.score >= 6000) {
+				x2 += -20;
+			}
+			else x2 += -15;
 		}
 		if (x2 < -50) {
-			randomBulletPosition();
+			randomBulletPosition(y2);
 			x2 = 2300;
 		}
 		if (FlyAwayGame.score >= 8000) {
 			x3 += -15;
 		}
 		if (x3 < -50) {
-			randomBulletPosition();
+			randomBulletPosition(y3);
 			x3 = 2600;
 		}
 	}
@@ -65,10 +72,10 @@ public class Bullet {
 	}
 	
 	public boolean isCollide2() {
-		return Colision.isCollideBullet(x2, y+FlyDot.y);
+		return Colision.isCollideBullet(x2, y2+FlyDot.y);
 	}
 	
 	public boolean isCollide3() {
-		return Colision.isCollideBullet(x3, y+FlyDot.y-240);
+		return Colision.isCollideBullet(x3, y3+FlyDot.y-240);
 	}
 }

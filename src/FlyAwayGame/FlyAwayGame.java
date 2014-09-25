@@ -38,6 +38,7 @@ public class FlyAwayGame extends BasicGame{
 	public static int jumpLimit = 6;
 	public static int BULLET_COUNT = 1;
 	public static int heart = 2;
+	public static int delaySkillSpeed = 0;
 	private int bounce = 2;
 	private int speedDistance = 0;
 	
@@ -65,10 +66,11 @@ public class FlyAwayGame extends BasicGame{
 			Image bow = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/AngleBow.png");
 			bow.setRotation(-45);
 			bow.draw(600, 100, 80, 80);
-			g.drawString("1. You should press up/down key to change angle of bow ", 100, 180);
-			g.drawString("2. Press 'Enter' key to get start.", 100, 200);
+			g.drawString("1. You should press 'up/down' key to change angle of bow ", 100, 180);
+			g.drawString("2. Press 'Enter' to start.", 100, 200);
 			g.drawString("Key && Skill in Game", 100, 270);
 			g.drawString("Spacebar : jump", 100, 300);
+			g.drawString("Skill Speedup : 'A'", 100, 320);
 			g.drawString("Please press '2' to get back menu game or '1' to start game", 100, 500);
 		}
 	}
@@ -189,10 +191,14 @@ public class FlyAwayGame extends BasicGame{
 	public void checkSkillSpeedUp() {
 		if (speedSkill) {
 			speedDistance -= vx;
+			delaySkillSpeed--;
 			if (speedDistance > 500) {
 				speedSkill = false;
 				vx = -5;
 			}
+		}
+		else if (delaySkillSpeed > 0) {
+			delaySkillSpeed--;
 		}
 	}
 
@@ -205,6 +211,7 @@ public class FlyAwayGame extends BasicGame{
 		bounce = 2;
 		heart = 2;
 		countScore = 1;
+		delaySkillSpeed = 0;
 	}
 
 
@@ -313,9 +320,10 @@ public class FlyAwayGame extends BasicGame{
 	    if (key == Input.KEY_1) {
 	    	startGame = true;
 	    }
-	    if (key == Input.KEY_A) {
+	    if (key == Input.KEY_A && delaySkillSpeed <= 0) {
 	    	speedSkill = true;
 	    	speedDistance = 0;
+	    	delaySkillSpeed = 550;
 	    	vx = -10;
 	    }
 	}

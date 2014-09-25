@@ -17,35 +17,35 @@ public class Coins {
 		this.x = x;
 		this.x2 = x + 200;
 		this.y = y;
-		this.y2 = y;
-		randomCoinPosition(y);
+		this.y2 = y - 100;
+		randomCoinPosition();
 	    coins = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/RainbowCoin.png");
 	}
 	
-	public float randomCoinPosition(float y) {
+	public float randomCoinPosition() {
 		Random random = new Random();
-		y = random.nextInt(400) - random.nextInt(300);
-		return y;
+		this.y = random.nextInt(400) - 120;
+		return this.y;
 	}
 	
 	public void render() {
 		coins.draw(x,y+FlyDot.y-120);
 		if (FlyAwayGame.score >= 4000) {
-			coins.draw(x2,y2+FlyDot.y);
+			coins.draw(x2,y2+FlyDot.y-240);
 		}
 	}
 	
 	public void update() {
 		x += FlyAwayGame.vx;
 		if (x < -100) {
-			randomCoinPosition(y);
+			randomCoinPosition();
 			x = 1100;
 		}
 		if (FlyAwayGame.score >= 4000) {
 			x2 += FlyAwayGame.vx;
 		}
 		if (x2 < -100) {
-			randomCoinPosition(y2);
+			randomCoinPosition();
 			x2 = 1200;
 		}
 	}
@@ -57,6 +57,6 @@ public class Coins {
 	}
 	
 	public boolean isCollide2() {
-		return Colision.isCollideCoins(x2, y2+FlyDot.y);
+		return Colision.isCollideCoins(x2, y2+FlyDot.y-240);
 	}
 }

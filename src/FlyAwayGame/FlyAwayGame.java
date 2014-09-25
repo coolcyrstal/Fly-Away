@@ -28,6 +28,7 @@ public class FlyAwayGame extends BasicGame{
 	private Color color;
 	private Coins coins; 
 	private Bullet bullet;
+	private SpeedUp speedup;
 	private Color greyblack = new Color(20,20,20);
 	public static int x = 0;
 	public static float G = (float) -0.2;
@@ -90,6 +91,7 @@ public class FlyAwayGame extends BasicGame{
 			bg();
 			flydot.render();
 			anglebow.render();
+			speedup.render();
 			if (isStarted) {
 				anglebow.remove();
 			}
@@ -159,6 +161,8 @@ public class FlyAwayGame extends BasicGame{
 		anglebow = new AngleBow(100,120);
 		coins = new Coins(900, 0);
 		bullet = new Bullet(2000, 0);
+		speedup = new SpeedUp(vx);
+		
 	}
 		
 	
@@ -171,6 +175,11 @@ public class FlyAwayGame extends BasicGame{
 			bounceWhenCollision();
 			coins.update();
 			bullet.update();
+			if (container.getInput().isKeyPressed(Input.KEY_A)) {
+				while (speedup.checktime() <= 300) {
+					speedup.update();
+				}
+			}
 		}
 		if (container.getInput().isKeyPressed(Input.KEY_ESCAPE)) { //Press Esc to restart
 			container.reinit();
@@ -216,15 +225,17 @@ public class FlyAwayGame extends BasicGame{
 	public void checkGetCoins() {
 		if (coins.isCollide()) {
 			coins.x += 1000;
+			increaseJumpLimitWhenScoreUp();
 		}
 		if (coins.isCollide2() && score >= 4000) {
 			coins.x2 += 1200;
+			increaseJumpLimitWhenScoreUp();
 		}
 	}
 
 
 	public void increaseJumpLimitWhenScoreUp() {
-		if (score - 1500*countScore >= 0) { //Check jump limit will get increase by 1 if score = 1500*k
+		if (score - 1200*countScore >= 0) { //Check jump limit will get increase by 1 if score = 1200*k
 			countScore++;
 			jumpLimit++;
 			if (jumpLimit > 6) {

@@ -12,7 +12,6 @@ public class FlyDot {
 	static float x;
 	static float y;
 	private float vy;
-	private float vx = 5;
 	private float vjump;
 	
 	public FlyDot(float x, float y, float vjump) throws SlickException {

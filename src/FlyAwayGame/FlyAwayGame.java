@@ -16,13 +16,14 @@ public class FlyAwayGame extends BasicGame{
 
 	public static final int GAME_WIDTH = 1000;
 	public static final int GAME_HEIGHT = 600;
-	public static final int vx = -5;
+	public static int vx = -5;
 	public static final float FLYDOT_JUMP_VY = 5;
 	public static boolean isStarted;
 	public static boolean startGame = false;
 	public static boolean isBounce = false;
 	public static boolean isDead = false;
 	public static boolean howToPlay = false;
+	private boolean speedSkill = false;
 	private FlyDot flydot;
 	private AngleBow anglebow;
 	private Color color;
@@ -38,6 +39,7 @@ public class FlyAwayGame extends BasicGame{
 	public static int BULLET_COUNT = 1;
 	public static int heart = 2;
 	private int bounce = 2;
+	private int speedDistance = 0;
 	
 	
 	public FlyAwayGame(String title) {
@@ -175,15 +177,22 @@ public class FlyAwayGame extends BasicGame{
 			bounceWhenCollision();
 			coins.update();
 			bullet.update();
-			if (container.getInput().isKeyPressed(Input.KEY_A)) {
-				while (speedup.checktime() <= 300) {
-					speedup.update();
-				}
-			}
+			checkSkillSpeedUp();
 		}
 		if (container.getInput().isKeyPressed(Input.KEY_ESCAPE)) { //Press Esc to restart
 			container.reinit();
 			resetInitialValue();
+		}
+	}
+
+
+	public void checkSkillSpeedUp() {
+		if (speedSkill) {
+			speedDistance -= vx;
+			if (speedDistance > 500) {
+				speedSkill = false;
+				vx = -5;
+			}
 		}
 	}
 
@@ -303,6 +312,11 @@ public class FlyAwayGame extends BasicGame{
 	    }
 	    if (key == Input.KEY_1) {
 	    	startGame = true;
+	    }
+	    if (key == Input.KEY_A) {
+	    	speedSkill = true;
+	    	speedDistance = 0;
+	    	vx = -10;
 	    }
 	}
 

@@ -282,7 +282,7 @@ public class FlyAwayGame extends BasicGame{
 
 
 	public void angleDistanceBeforeStarted() { //Projectile (*-*)^(T-T)
-		if (score <= -anglebow.angle*5 || -anglebow.angle*5 <= 600 + anglebow.angle*5) {
+		if (score <= -anglebow.angle*5 || score <= 600 + anglebow.angle*5) {
 			if (score < -anglebow.angle*5) {
 				flydot.y += FLYDOT_JUMP_VY;	
 			}
@@ -290,7 +290,7 @@ public class FlyAwayGame extends BasicGame{
 				flydot.y += 1;	
 			}
 		}
-		if (score <= 600 + anglebow.angle*5 || 600 + anglebow.angle*5 <= -anglebow.angle*5) {
+		if (score <= 600 + anglebow.angle*5 || score <= -anglebow.angle*5) {
 			if (score < 600 + anglebow.angle*5) {
 				flydot.x += -vx;	
 			}

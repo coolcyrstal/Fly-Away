@@ -16,25 +16,20 @@ public class FlyAwayGame extends BasicGame{
 
 	public static final int GAME_WIDTH = 1000;
 	public static final int GAME_HEIGHT = 600;
-	public static int vx = -5;
+	public static int x = 0, vx = -5;
 	public static final float FLYDOT_JUMP_VY = 5;
+	public static float G = (float) -0.2;
 	public static boolean isStarted;
-	public static boolean startGame = false;
-	public static boolean isBounce = false;
-	public static boolean isDead = false;
-	public static boolean howToPlay = false;
+	public static boolean startGame = false, howToPlay = false;
+	public static boolean isBounce = false , isDead = false;
 	private boolean speedSkill = false;
 	private FlyDot flydot;
 	private AngleBow anglebow;
-	private Color color;
+	private Color color, greyblack = new Color(20,20,20);
 	private Coins coins; 
 	private Bullet bullet;
 	private SpeedUp speedup;
-	private Color greyblack = new Color(20,20,20);
-	public static int x = 0;
-	public static float G = (float) -0.2;
-	public static int score = 0;
-	public static int countScore = 1;
+	public static int score = 0, countScore = 1;
 	public static int jumpLimit = 6;
 	public static int BULLET_COUNT = 1;
 	public static int heart = 2;
@@ -287,14 +282,21 @@ public class FlyAwayGame extends BasicGame{
 
 
 	public void angleDistanceBeforeStarted() { //Projectile (*-*)^(T-T)
-		if (score <= -anglebow.angle*5) {
-			flydot.y += FLYDOT_JUMP_VY;
-			if (-anglebow.angle*5 < 600 + anglebow.angle*5) {
-				flydot.y += -1;
+		if (score <= -anglebow.angle*5 || -anglebow.angle*5 <= 600 + anglebow.angle*5) {
+			if (score < -anglebow.angle*5) {
+				flydot.y += FLYDOT_JUMP_VY;	
+			}
+			else if (score > -anglebow.angle*5) {
+				flydot.y += 1;	
 			}
 		}
-		if (score <= 600 + anglebow.angle*5) {
-			flydot.x += -vx;
+		if (score <= 600 + anglebow.angle*5 || 600 + anglebow.angle*5 <= -anglebow.angle*5) {
+			if (score < 600 + anglebow.angle*5) {
+				flydot.x += -vx;	
+			}
+			else if (score > 600 + anglebow.angle*5) {
+				flydot.x += 1;	
+			}
 		}
 		else {
 			flydot.update();

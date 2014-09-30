@@ -7,10 +7,8 @@ import org.newdawn.slick.SlickException;
 
 public class Coins {
 
-	static float x;
-	static float x2;
-	private float y;
-	private float y2;
+	static float x, x2;
+	private float y, y2;
 	private Image coins;
 
 	public Coins(float x, float y) throws SlickException {

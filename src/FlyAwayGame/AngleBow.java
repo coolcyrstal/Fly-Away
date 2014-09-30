@@ -4,11 +4,10 @@ import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 
 public class AngleBow{
-	private float x;
-	private float y;
+	
+	private float x, y;
 	private Image anglebow;
-	private int WIDTH = 200;
-	private int HEIGHT = 120;
+	private int WIDTH = 200, HEIGHT = 120;
 	int angle = -45;
 	private int add;
 

@@ -7,12 +7,8 @@ import org.newdawn.slick.SlickException;
 
 public class Bullet {
 
-	public static float x;
-	public static float x2;
-	public static float x3;
-	private float y;
-	private float y2;
-	private float y3;
+	public static float x ,x2 ,x3;
+	private float y, y2, y3;
 	private Image bullet;
 	
 	public Bullet(float x, float y) throws SlickException {

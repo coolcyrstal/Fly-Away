@@ -6,13 +6,10 @@ import org.newdawn.slick.SpriteSheet;
 
 public class FlyDot {
 
-	public static final int WIDTH = 40;
-	public static final int HEIGHT = 40;
+	public static final int WIDTH = 40, HEIGHT = 40;
 	private Image flyimage;
-	static float x;
-	static float y;
-	private float vy;
-	private float vjump;
+	static float x, y;
+	private float vy, vjump;
 	
 	public FlyDot(float x, float y, float vjump) throws SlickException {
 	    this.x = x;
@@ -38,9 +35,9 @@ public class FlyDot {
 	
 	public void update() {
 		y += vy;
+		change_G_WhenHigh();
 		vy += FlyAwayGame.G; 
 	    limitOfXAndY();
-	    change_G_WhenHigh();
 	}
 
 	public void limitOfXAndY() {

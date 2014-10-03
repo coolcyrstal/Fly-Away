@@ -51,7 +51,50 @@ public class FlyAwayGame extends BasicGame{
 		showWhenDead(g);
 	}
 
+	public void gameMenu(Graphics g) {
+		if (isStarted == false && startGame == false && isDead == false && howToPlay == false) {
+			g.drawString("Please Select Game Menu", 400, 250);
+			g.drawString("1 : Start Game", 400, 300);
+			g.drawString("2 : Back to Menu Game", 400, 320);
+			g.drawString("3 : Exit Game", 400, 340);
+			g.drawString("4 : How To Play", 400, 360);
+		}
+	}
 
+
+	public void gameMenuFunction(GameContainer container, Graphics g) throws SlickException {
+		
+		// Press 1 start, 2 menu, 3 exit 4 how to play
+		if (startGame) { 
+			bg();
+			flydot.render();
+			anglebow.render();
+			speedup.render();
+			if (isStarted) {
+				anglebow.remove();
+			}
+			jumpAndHeartPic();
+			stringFunction(g);
+			coins.render();
+			bullet.render();
+		}
+		
+		if (container.getInput().isKeyPressed(Input.KEY_2)) {
+			startGame = false;
+			isDead = false;
+			howToPlay = false;
+		}
+		
+		if (container.getInput().isKeyPressed(Input.KEY_3) && howToPlay == false) {
+			container.exit();
+		}
+		
+		if (container.getInput().isKeyPressed(Input.KEY_4)) {
+			howToPlay = true;
+		}
+	}
+
+	
 	public void howToPlay(Graphics g) throws SlickException {
 		if (howToPlay && startGame == false) {
 			g.drawString("How To Play", 450, 80);
@@ -84,36 +127,8 @@ public class FlyAwayGame extends BasicGame{
 		}
 	}
 
-
-	public void gameMenuFunction(GameContainer container, Graphics g) throws SlickException {
-		if (startGame) { // Press 1 start, 2 menu, 3 exit 4 how to play
-			bg();
-			flydot.render();
-			anglebow.render();
-			speedup.render();
-			if (isStarted) {
-				anglebow.remove();
-			}
-			jumpAndHeartPic();
-			stringFunction(g);
-			coins.render();
-			bullet.render();
-		}
-		if (container.getInput().isKeyPressed(Input.KEY_2)) {
-			startGame = false;
-			isDead = false;
-			howToPlay = false;
-		}
-		if (container.getInput().isKeyPressed(Input.KEY_3) && howToPlay == false) {
-			container.exit();
-		}
-		if (container.getInput().isKeyPressed(Input.KEY_4)) {
-			howToPlay = true;
-		}
-	}
-
-
-	public void stringFunction(Graphics g) throws SlickException { //Set color of string
+	//text that show when play game
+	public void stringFunction(Graphics g) throws SlickException { 
 		color = new Color(255,0,0);
 		g.setColor(color);
 		g.drawString("2 : Back to Menu", 120, 10);
@@ -126,25 +141,17 @@ public class FlyAwayGame extends BasicGame{
 	}
 
 
-	public void gameMenu(Graphics g) {
-		if (isStarted == false && startGame == false && isDead == false && howToPlay == false) {
-			g.drawString("Please Select Game Menu", 400, 250);
-			g.drawString("1 : Start Game", 400, 300);
-			g.drawString("2 : Back to Menu Game", 400, 320);
-			g.drawString("3 : Exit Game", 400, 340);
-			g.drawString("4 : How To Play", 400, 360);
-		}
-	}
-
 	
-	public void jumpAndHeartPic() throws SlickException { //Picture of jump and heart gauge
+
+	//Picture of jump and heart gauge
+	public void jumpAndHeartPic() throws SlickException { 
 		Image jumppic = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/jump" + jumpLimit + ".png");
 		jumppic.draw(20,40);
 		Image heartPic = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/heart" + heart + ".png");
 		heartPic.draw(20,80);
 	}
 
-	
+	//Create background
 	private void bg() throws SlickException {
 		for(int i = 0; i < 20; i++) {
 			Image background = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/bg.png");
@@ -181,23 +188,8 @@ public class FlyAwayGame extends BasicGame{
 			resetInitialValue();
 		}
 	}
-
-
-	public void checkSkillSpeedUp() {
-		if (speedSkill) {
-			speedDistance -= vx;
-			delaySkillSpeed--;
-			if (speedDistance > 500) {
-				speedSkill = false;
-				vx = -5;
-			}
-		}
-		else if (delaySkillSpeed > 0) {
-			delaySkillSpeed--;
-		}
-	}
-
-
+	
+	//if game restart >> reset variable of game to initial value
 	public void resetInitialValue() {
 		score = 0;
 		x = 0;
@@ -208,80 +200,9 @@ public class FlyAwayGame extends BasicGame{
 		countScore = 1;
 		delaySkillSpeed = 0;
 	}
-
-
-	public void bounceWhenCollision() {
-		if(flydot.isCollide()) {
-			if (bounce > 0) { //Bouncing of character that contain 2 bounce to die
-				flydot.jump();
-				bounce--;
-				isBounce = true;
-			}
-			else {
-				isStarted = false;
-				isDead = true;
-			}
-		}
-	}
-
-
-	public void scoreSummary() throws SlickException {
-		score += -vx;
-		increaseJumpLimitWhenScoreUp();
-		checkGetCoins();
-		checkBulletAttack();
-	}
-
-
-	public void checkGetCoins() {
-		if (coins.isCollide()) {
-			coins.x += 1000;
-			increaseJumpLimitWhenScoreUp();
-		}
-		if (coins.isCollide2() && score >= 4000) {
-			coins.x2 += 1200;
-			increaseJumpLimitWhenScoreUp();
-		}
-	}
-
-
-	public void increaseJumpLimitWhenScoreUp() {
-		if (score - 1200*countScore >= 0) { //Check jump limit will get increase by 1 if score = 1200*k
-			countScore++;
-			jumpLimit++;
-			if (jumpLimit > 6) {
-				jumpLimit = 6;
-			}
-		}
-	}
-
-
-	public void checkBulletAttack() {
-		if (bullet.isCollide()) {
-			bullet.x += 2000;
-			heartLifeWhenAttack();
-		}
-		if (bullet.isCollide2() && score >= 4000) {
-			bullet.x2 += 2300;
-			heartLifeWhenAttack();
-		}
-		if (bullet.isCollide3() && score >= 8000) {
-			bullet.x3 += 2600;
-			heartLifeWhenAttack();
-		}
-	}
-
-
-	public void heartLifeWhenAttack() {
-		heart--;
-		if (heart == 0) { //check heart life when life == 0, player will died
-			isStarted = false;
-			isDead = true;
-		}
-	}
-
-
-	public void angleDistanceBeforeStarted() { //Projectile (*-*)^(T-T)
+	
+	//Projectile of angle that select before start
+	public void angleDistanceBeforeStarted() { 
 		if (score <= -anglebow.angle*5 || score <= 600 + anglebow.angle*5) {
 			if (score < -anglebow.angle*5) {
 				flydot.y += FLYDOT_JUMP_VY;	
@@ -302,6 +223,94 @@ public class FlyAwayGame extends BasicGame{
 			flydot.update();
 		}
 	}
+
+	public void bounceWhenCollision() {
+		if(flydot.isCollide()) {
+			//Bouncing of character that contain 2 bounce to die
+			if (bounce > 0) { 
+				flydot.jump();
+				bounce--;
+				isBounce = true;
+			}
+			else {
+				isStarted = false;
+				isDead = true;
+			}
+		}
+	}
+	
+	// SUM of score
+	public void scoreSummary() throws SlickException {
+		score += -vx;
+		increaseJumpLimitWhenScoreUp();
+		checkGetCoins();
+		checkBulletAttack();
+	}
+	
+	// Skill speedup
+	public void checkSkillSpeedUp() {
+		if (speedSkill) {
+			speedDistance -= vx;
+			delaySkillSpeed--;
+			if (speedDistance > 500) {
+				speedSkill = false;
+				vx = -5;
+			}
+		}
+		// check delay of skill
+		else if (delaySkillSpeed > 0) {
+			delaySkillSpeed--;
+		}
+	}
+	
+	//Check jump limit will get increase by 1 if score = 1200*k
+	public void increaseJumpLimitWhenScoreUp() {
+		if (score - 1200*countScore >= 0) { 
+			countScore++;
+			jumpLimit++;
+			if (jumpLimit > 6) {
+				jumpLimit = 6;
+			}
+		}
+	}
+
+	// check when rabbit collision to coin
+	public void checkGetCoins() {
+		if (coins.isCollide()) {
+			coins.x += 1000;
+			increaseJumpLimitWhenScoreUp();
+		}
+		if (coins.isCollide2() && score >= 4000) {
+			coins.x2 += 1200;
+			increaseJumpLimitWhenScoreUp();
+		}
+	}
+
+	// check when rabbit attack by bullet
+	public void checkBulletAttack() {
+		if (bullet.isCollide()) {
+			bullet.x += 2000;
+			heartLifeWhenAttack();
+		}
+		if (bullet.isCollide2() && score >= 4000) {
+			bullet.x2 += 2300;
+			heartLifeWhenAttack();
+		}
+		if (bullet.isCollide3() && score >= 8000) {
+			bullet.x3 += 2600;
+			heartLifeWhenAttack();
+		}
+	}
+
+	//decrease heart life by 1, check heart life when life == 0 >> DIED!!
+	public void heartLifeWhenAttack() {
+		heart--;
+		if (heart == 0) { 
+			isStarted = false;
+			isDead = true;
+		}
+	}
+
 	
 	@Override
 	public void keyPressed(int key, char c) {
@@ -334,7 +343,9 @@ public class FlyAwayGame extends BasicGame{
 	public void jump() {
 		if (jumpLimit > 0) {
 			jumpLimit();
-			if (isBounce == true) { //Check bounce when jump bounce will reset to initial value
+			
+			//Check bounce when jump >> bounce will reset to initial value
+			if (isBounce == true) { 
 				isBounce = false;
 				bounce = 2;
 			}

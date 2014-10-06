@@ -17,7 +17,7 @@ public class Coins {
 		this.y = y;
 		this.y2 = y - 100;
 		randomCoinPosition();
-	    coins = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/RainbowCoin.png");
+	    coins = new Image("res/RainbowCoin.png");
 	}
 	
 	public float randomCoinPosition() {

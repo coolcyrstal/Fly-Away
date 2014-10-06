@@ -19,7 +19,7 @@ public class Bullet {
 		this.y2 = y;
 		this.y3 = y;
 		randomBulletPosition();
-	    bullet = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/firebullet.png");
+	    bullet = new Image("res/firebullet.png");
 	}
 	
 	public void render() {

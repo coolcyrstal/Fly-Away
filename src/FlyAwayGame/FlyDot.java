@@ -14,7 +14,7 @@ public class FlyDot {
 	public FlyDot(float x, float y, float vjump) throws SlickException {
 	    this.x = x;
 	    this.y = y;
-	    flyimage = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/flydot.png");
+	    flyimage = new Image("res/flydot.png");
 	    this.vy = vjump;
 	    this.vjump = vjump;
 	}
@@ -25,10 +25,10 @@ public class FlyDot {
 	
 	public void render() throws SlickException {
 		if (FlyAwayGame.heart < 2) {
-			flyimage = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/flydothurt.png");
+			flyimage = new Image("res/flydothurt.png");
 		}
 		else {
-			flyimage = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/flydot.png");
+			flyimage = new Image("res/flydot.png");
 		}
 		flyimage.draw(x - WIDTH/2, FlyAwayGame.GAME_HEIGHT - (y + HEIGHT/2));
 	}

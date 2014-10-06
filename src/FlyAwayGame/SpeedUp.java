@@ -9,7 +9,7 @@ public class SpeedUp {
 	private int i = 0;
 
 	public SpeedUp(int vx) throws SlickException {
-	    speedUp = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/speedup0.png");
+	    speedUp = new Image("res/speedup0.png");
 	}
 	
 	public void render() throws SlickException {
@@ -23,7 +23,7 @@ public class SpeedUp {
 			i = 1;
 		}
 		else i = 0;
-		speedUp = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/speedup" + i + ".png");
+		speedUp = new Image("res/speedup" + i + ".png");
 		speedUp.draw(20,180);
 	}
 }

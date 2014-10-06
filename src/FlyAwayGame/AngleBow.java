@@ -14,7 +14,7 @@ public class AngleBow{
 	public AngleBow(float x, float y) throws SlickException {
 	    this.x = x;
 	    this.y = y;
-	    anglebow = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/AngleBow.png");
+	    anglebow = new Image("res/AngleBow.png");
 	}
 	
 	public void render() {

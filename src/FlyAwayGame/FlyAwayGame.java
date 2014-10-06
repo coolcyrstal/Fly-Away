@@ -120,7 +120,7 @@ public class FlyAwayGame extends BasicGame{
 			ShapeFill fillBlack = new GradientFill(200, 30, greyblack, 800, 530, greyblack);
 			g.fill(box, fillBlack);
 			g.drawString("You are dead!!!!!", 430, 50);
-			Image rabbit555 = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/rabbit555.png");
+			Image rabbit555 = new Image("res/rabbit555.png");
 			rabbit555.draw(320,100);
 			g.drawString("5555555555555", 550, 250);
 			g.drawString("Your score is " + score, 420, 450);
@@ -145,16 +145,16 @@ public class FlyAwayGame extends BasicGame{
 
 	//Picture of jump and heart gauge
 	public void jumpAndHeartPic() throws SlickException { 
-		Image jumppic = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/jump" + jumpLimit + ".png");
+		Image jumppic = new Image("res/jump" + jumpLimit + ".png");
 		jumppic.draw(20,40);
-		Image heartPic = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/heart" + heart + ".png");
+		Image heartPic = new Image("res/heart" + heart + ".png");
 		heartPic.draw(20,80);
 	}
 
 	//Create background
 	private void bg() throws SlickException {
 		for(int i = 0; i < 20; i++) {
-			Image background = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/bg.png");
+			Image background = new Image("res/bg.png");
 			background.draw(x + 2000*i, -600+flydot.y-120);
 		}
 	}
@@ -226,8 +226,7 @@ public class FlyAwayGame extends BasicGame{
 
 	public void bounceWhenCollision() {
 		if(flydot.isCollide()) {
-			//Bouncing of character that contain 2 bounce to die
-			if (bounce > 0) { 
+			if (bounce > 0) { //Bouncing of character that contain 2 bounce to die
 				flydot.jump();
 				bounce--;
 				isBounce = true;

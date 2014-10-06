@@ -101,7 +101,7 @@ public class FlyAwayGame extends BasicGame{
 			g.drawString("--------------------------------------" + 
 						"---------------------------------------" + "--------------", 80, 100);
 			g.drawString("Before Start Game", 100, 150);
-			Image bow = new Image("C:///Users/Chayenjr/Desktop/junior/KU Ле 2/OOP/Fly Away/AngleBow.png");
+			Image bow = new Image("res/AngleBow.png");
 			bow.setRotation(-45);
 			bow.draw(600, 100, 80, 80);
 			g.drawString("1. You should press 'up/down' key to change angle of bow ", 100, 180);

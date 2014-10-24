@@ -5,7 +5,7 @@ import java.util.Random;
 import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 
-public class itemHeart {
+public class ItemHeart {
 
 	private float x;
 	private float x2;
@@ -13,7 +13,7 @@ public class itemHeart {
 	private float y2;
 	private Image itemheart;
 
-	public itemHeart(float x, float y) throws SlickException {
+	public ItemHeart(float x, float y) throws SlickException {
 		this.x = x;
 		this.x2 = x + 200;
 		this.y = y;
@@ -39,14 +39,14 @@ public class itemHeart {
 		x += FlyAwayGame.vx;
 		if (x < -100) {
 			randomItemPosition();
-			x = 1000;
+			x = 1500;
 		}
 		if (FlyAwayGame.score >= 4000) {
 			x2 += FlyAwayGame.vx;
 		}
 		if (x2 < -100) {
 			randomItemPosition();
-			x2 = 1100;
+			x2 = 1700;
 		}
 	}
 	

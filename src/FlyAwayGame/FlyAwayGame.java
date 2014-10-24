@@ -29,6 +29,7 @@ public class FlyAwayGame extends BasicGame{
 	private Coins coins; 
 	private Bullet bullet;
 	private SpeedUp speedup;
+	private ItemHeart itemheart;
 	public static int score = 0, countScore = 1;
 	public static int jumpLimit = 6;
 	public static int BULLET_COUNT = 1;
@@ -67,16 +68,12 @@ public class FlyAwayGame extends BasicGame{
 		// Press 1 start, 2 menu, 3 exit 4 how to play
 		if (startGame) { 
 			bg();
-			flydot.render();
-			anglebow.render();
-			speedup.render();
+			imageRender();
 			if (isStarted) {
 				anglebow.remove();
 			}
 			jumpAndHeartPic();
 			stringFunction(g);
-			coins.render();
-			bullet.render();
 		}
 		
 		if (container.getInput().isKeyPressed(Input.KEY_2)) {
@@ -92,6 +89,16 @@ public class FlyAwayGame extends BasicGame{
 		if (container.getInput().isKeyPressed(Input.KEY_4)) {
 			howToPlay = true;
 		}
+	}
+
+
+	public void imageRender() throws SlickException {
+		flydot.render();
+		anglebow.render();
+		speedup.render();
+		itemheart.render();
+		coins.render();
+		bullet.render();
 	}
 
 	
@@ -168,7 +175,7 @@ public class FlyAwayGame extends BasicGame{
 		coins = new Coins(900, 0);
 		bullet = new Bullet(2000, 0);
 		speedup = new SpeedUp(vx);
-		
+		itemheart = new ItemHeart(1500,0);
 	}
 		
 	
@@ -181,6 +188,7 @@ public class FlyAwayGame extends BasicGame{
 			bounceWhenCollision();
 			coins.update();
 			bullet.update();
+			itemheart.update();
 			checkSkillSpeedUp();
 		}
 		if (container.getInput().isKeyPressed(Input.KEY_ESCAPE)) { //Press Esc to restart

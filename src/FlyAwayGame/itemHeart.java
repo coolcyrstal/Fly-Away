@@ -5,56 +5,56 @@ import java.util.Random;
 import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 
-public class Coins {
+public class itemHeart {
 
-	static float x, x2;
-	private float y, y2;
-	private Image coins;
+	private float x;
+	private float x2;
+	private float y;
+	private float y2;
+	private Image itemheart;
 
-	public Coins(float x, float y) throws SlickException {
+	public itemHeart(float x, float y) throws SlickException {
 		this.x = x;
 		this.x2 = x + 200;
 		this.y = y;
 		this.y2 = y - 100;
-		randomCoinPosition();
-	    coins = new Image("res/RainbowCoin.png");
+		randomItemPosition();
+	    itemheart = new Image("res/itemHeart.png");
 	}
 	
-	public float randomCoinPosition() {
+	public float randomItemPosition() {
 		Random random = new Random();
 		this.y = random.nextInt(400) - 120;
 		return this.y;
 	}
 	
 	public void render() {
-		coins.draw(x,y+FlyDot.y-120);
+		itemheart.draw(x,y+FlyDot.y-120);
 		if (FlyAwayGame.score >= 4000) {
-			coins.draw(x2,y2+FlyDot.y-240);
+			itemheart.draw(x2,y2+FlyDot.y-240);
 		}
 	}
 	
 	public void update() {
 		x += FlyAwayGame.vx;
 		if (x < -100) {
-			randomCoinPosition();
+			randomItemPosition();
 			x = 1000;
 		}
 		if (FlyAwayGame.score >= 4000) {
 			x2 += FlyAwayGame.vx;
 		}
 		if (x2 < -100) {
-			randomCoinPosition();
+			randomItemPosition();
 			x2 = 1100;
 		}
 	}
 	
-	
-	
 	public boolean isCollide() {
-		return Colision.isCollideCoins(x, y+FlyDot.y-120);
+		return Colision.isCollideItemHeart(x, y+FlyDot.y-120);
 	}
 	
 	public boolean isCollide2() {
-		return Colision.isCollideCoins(x2, y2+FlyDot.y-240);
+		return Colision.isCollideItemHeart(x2, y2+FlyDot.y-240);
 	}
 }

@@ -276,11 +276,11 @@ public class FlyAwayGame extends BasicGame{
 	// check when rabbit collision to coin
 	public void checkGetCoins() {
 		if (coins.isCollide()) {
-			coins.x += 1000;
+			coins.x += 600;
 			increaseJumpLimitWhenScoreUp();
 		}
 		if (coins.isCollide2() && score >= 4000) {
-			coins.x2 += 1200;
+			coins.x2 += 800;
 			increaseJumpLimitWhenScoreUp();
 		}
 	}

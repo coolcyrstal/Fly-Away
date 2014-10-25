@@ -24,8 +24,11 @@ public class FlyDot {
 	}
 	
 	public void render() throws SlickException {
-		if (FlyAwayGame.heart < 2) {
+		if (FlyAwayGame.heart == 2) {
 			flyimage = new Image("res/flydothurt.png");
+		}
+		else if (FlyAwayGame.heart <= 1) {
+			flyimage = new Image("res/flydotinjured.png");
 		}
 		else {
 			flyimage = new Image("res/flydot.png");

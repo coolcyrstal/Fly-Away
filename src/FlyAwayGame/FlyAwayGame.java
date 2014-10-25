@@ -33,7 +33,7 @@ public class FlyAwayGame extends BasicGame{
 	public static int score = 0, countScore = 1;
 	public static int jumpLimit = 6;
 	public static int BULLET_COUNT = 1;
-	public static int heart = 2;
+	public static int heart = 3;
 	public static int delaySkillSpeed = 0;
 	private int bounce = 2;
 	private int speedDistance = 0;
@@ -154,8 +154,16 @@ public class FlyAwayGame extends BasicGame{
 	public void jumpAndHeartPic() throws SlickException { 
 		Image jumppic = new Image("res/jump" + jumpLimit + ".png");
 		jumppic.draw(20,40);
-		Image heartPic = new Image("res/heart" + heart + ".png");
+		Image heartPic = new Image("res/heart" + limitHeart(heart) + ".png");
 		heartPic.draw(20,80);
+	}
+	
+	private int limitHeart(int heart) {
+		if(heart >= 3) {
+			heart = 3;
+			return heart;
+		}
+		else return heart;
 	}
 
 	//Create background

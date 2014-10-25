@@ -27,6 +27,9 @@ public class Colision {
 	static boolean isCollideItemHeart(float x, float y) {
 		if ((FlyDot.x+30 <= x+60 && FlyDot.x+30 >= x) && (FlyDot.y+30 <= 600-y+60 && FlyDot.y+30 >= 600-y)) {
 			FlyAwayGame.heart += 1;
+			if (FlyAwayGame.heart >= 3) {
+				FlyAwayGame.heart = 3;
+			}
 			return true;
 		}
 		else return false;

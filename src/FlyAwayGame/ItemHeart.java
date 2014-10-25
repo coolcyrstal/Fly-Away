@@ -7,8 +7,7 @@ import org.newdawn.slick.SlickException;
 
 public class ItemHeart {
 
-	private float x;
-	private float x2;
+	static float x,x2;
 	private float y;
 	private float y2;
 	private Image itemheart;

@@ -198,10 +198,21 @@ public class FlyAwayGame extends BasicGame{
 			bullet.update();
 			itemheart.update();
 			checkSkillSpeedUp();
+			checkGetItemHeart();
 		}
 		if (container.getInput().isKeyPressed(Input.KEY_ESCAPE)) { //Press Esc to restart
 			container.reinit();
 			resetInitialValue();
+		}
+	}
+
+
+	public void checkGetItemHeart() {
+		if (itemheart.isCollide()) {
+			itemheart.x += 600;
+		}
+		if (itemheart.isCollide2()) {
+			itemheart.x2 += 800;
 		}
 	}
 	
@@ -212,7 +223,7 @@ public class FlyAwayGame extends BasicGame{
 		jumpLimit = 6;
 		isDead = false;
 		bounce = 2;
-		heart = 2;
+		heart = 3;
 		countScore = 1;
 		delaySkillSpeed = 0;
 	}

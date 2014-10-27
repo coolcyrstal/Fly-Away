@@ -29,6 +29,7 @@ public class Colision {
 			FlyAwayGame.heart += 1;
 			if (FlyAwayGame.heart >= 3) {
 				FlyAwayGame.heart = 3;
+				FlyAwayGame.score += 800;
 			}
 			return true;
 		}

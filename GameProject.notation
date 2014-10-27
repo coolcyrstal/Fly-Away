@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:css="http://www.eclipse.org/papyrus/infra/gmfdiag/css" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/viewpoints/policy/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <notation:Diagram xmi:id="_duEncFgsEeSme4rqoEiSFA" type="PapyrusUMLClassDiagram" name="ClassDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_juLIsFgsEeSme4rqoEiSFA" type="2008">
+      <children xmi:type="notation:DecorationNode" xmi:id="_juUSoFgsEeSme4rqoEiSFA" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_jueDoFgsEeSme4rqoEiSFA" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_jueDoVgsEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_jueDolgsEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_jueDo1gsEeSme4rqoEiSFA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jueDpFgsEeSme4rqoEiSFA"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_jueDpVgsEeSme4rqoEiSFA" type="7018">
+        <children xmi:type="notation:Shape" xmi:id="_pLzkIFguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYLWVgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_pLzkIVguEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_pL9VIFguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYLZlgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_pL9VIVguEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_pL9VIlguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYLalgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_pL9VI1guEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_pL9VJFguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYLcVgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_pL9VJVguEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_pL9VJlguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYLdVgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_pL9VJ1guEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_pL9VKFguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYLeVgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_pL9VKVguEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_pL9VKlguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYLfVgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_pL9VK1guEeSme4rqoEiSFA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_jueDplgsEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_jueDp1gsEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_jueDqFgsEeSme4rqoEiSFA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jueDqVgsEeSme4rqoEiSFA"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_jueDqlgsEeSme4rqoEiSFA" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_jueDq1gsEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_jueDrFgsEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_jueDrVgsEeSme4rqoEiSFA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jueDrlgsEeSme4rqoEiSFA"/>
+      </children>
+      <element xmi:type="uml:Class" href="GameProject.uml#_mbYLQ1grEeSme4rqoEiSFA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_juLIsVgsEeSme4rqoEiSFA" x="579" y="204" width="200" height="184"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_2QlT8FgsEeSme4rqoEiSFA" type="2008">
+      <children xmi:type="notation:DecorationNode" xmi:id="_2QvE8FgsEeSme4rqoEiSFA" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_2QvE8VgsEeSme4rqoEiSFA" type="7017">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6kpKIFgsEeSme4rqoEiSFA" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6kpKIVgsEeSme4rqoEiSFA" key="collapsed" value="true"/>
+        </eAnnotations>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_2QvE8lgsEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_2QvE81gsEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_2QvE9FgsEeSme4rqoEiSFA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2QvE9VgsEeSme4rqoEiSFA"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_2QvE9lgsEeSme4rqoEiSFA" type="7018">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6SVSIFgsEeSme4rqoEiSFA" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6SVSIVgsEeSme4rqoEiSFA" key="collapsed" value="true"/>
+        </eAnnotations>
+        <children xmi:type="notation:Shape" xmi:id="_oGzOcFgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYMqVgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oGzOcVgvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oGzOclgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYMrVgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oGzOc1gvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oGzOdFgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYMulgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oGzOdVgvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oGzOdlgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYMwVgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oGzOd1gvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oGzOeFgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYMzlgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oGzOeVgvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oGzOelgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYM2FgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oGzOe1gvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oGzOfFgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYM4lgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oGzOfVgvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oGzOflgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYM7FgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oGzOf1gvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oGzOgFgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYM81grEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oGzOgVgvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oGzOglgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYM-lgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oGzOg1gvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oGzOhFgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYNBFgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oGzOhVgvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oGzOhlgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYNEVgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oGzOh1gvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oGzOiFgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYNFVgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oGzOiVgvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oG8YYFgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYNGVgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oG8YYVgvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oG8YYlgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYNHVgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oG8YY1gvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oG8YZFgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYNJFgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oG8YZVgvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oG8YZlgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYNKFgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oG8YZ1gvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oG8YaFgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYNLFgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oG8YaVgvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oG8YalgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYNMFgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oG8Ya1gvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oG8YbFgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYNNFgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oG8YbVgvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oG8YblgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYNOFgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oG8Yb1gvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oG8YcFgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYNQlgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oG8YcVgvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oG8YclgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYNRlgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oG8Yc1gvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oG8YdFgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYNSlgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oG8YdVgvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oG8YdlgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbhVpFgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oG8Yd1gvEeSme4rqoEiSFA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_2QvE91gsEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_2QvE-FgsEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_2QvE-VgsEeSme4rqoEiSFA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2QvE-lgsEeSme4rqoEiSFA"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_2QvE-1gsEeSme4rqoEiSFA" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_2QvE_FgsEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_2QvE_VgsEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_2QvE_lgsEeSme4rqoEiSFA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2QvE_1gsEeSme4rqoEiSFA"/>
+      </children>
+      <element xmi:type="uml:Class" href="GameProject.uml#_mbYMVlgrEeSme4rqoEiSFA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2QlT8VgsEeSme4rqoEiSFA" x="245" y="1" width="244"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_vME58FgtEeSme4rqoEiSFA" type="2008">
+      <children xmi:type="notation:DecorationNode" xmi:id="_vME58lgtEeSme4rqoEiSFA" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_vME581gtEeSme4rqoEiSFA" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_vME59FgtEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_vME59VgtEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_vME59lgtEeSme4rqoEiSFA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vME591gtEeSme4rqoEiSFA"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_vME5-FgtEeSme4rqoEiSFA" type="7018">
+        <children xmi:type="notation:Shape" xmi:id="_xlxfwFguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYL-VgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_xlxfwVguEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_xlxfwlguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYMA1grEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_xlxfw1guEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_xlxfxFguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYMB1grEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_xlxfxVguEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_xlxfxlguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYMC1grEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_xlxfx1guEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_xlxfyFguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYMD1grEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_xlxfyVguEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_xlxfylguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYME1grEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_xlxfy1guEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_xlxfzFguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYMF1grEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_xlxfzVguEeSme4rqoEiSFA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_vME5-VgtEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_vME5-lgtEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_vME5-1gtEeSme4rqoEiSFA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vME5_FgtEeSme4rqoEiSFA"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_vME5_VgtEeSme4rqoEiSFA" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_vME5_lgtEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_vME5_1gtEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_vME6AFgtEeSme4rqoEiSFA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vME6AVgtEeSme4rqoEiSFA"/>
+      </children>
+      <element xmi:type="uml:Class" href="GameProject.uml#_mbYL41grEeSme4rqoEiSFA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vME58VgtEeSme4rqoEiSFA" x="21" y="-3" width="165" height="191"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_Em_jYFguEeSme4rqoEiSFA" type="2008">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Em_jYlguEeSme4rqoEiSFA" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_Em_jY1guEeSme4rqoEiSFA" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_Em_jZFguEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_Em_jZVguEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_Em_jZlguEeSme4rqoEiSFA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Em_jZ1guEeSme4rqoEiSFA"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_Em_jaFguEeSme4rqoEiSFA" type="7018">
+        <children xmi:type="notation:Shape" xmi:id="_rFzLoFguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYMNFgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_rFzLoVguEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_rFzLolguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYMPlgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_rFzLo1guEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_rFzLpFguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYMQlgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_rFzLpVguEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_rFzLplguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYMRlgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_rFzLp1guEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_rFzLqFguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYMSlgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_rFzLqVguEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_rFzLqlguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYMTlgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_rFzLq1guEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_rFzLrFguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYMUlgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_rFzLrVguEeSme4rqoEiSFA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_Em_jaVguEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_Em_jalguEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_Em_ja1guEeSme4rqoEiSFA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Em_jbFguEeSme4rqoEiSFA"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_Em_jbVguEeSme4rqoEiSFA" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_Em_jblguEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_Em_jb1guEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_Em_jcFguEeSme4rqoEiSFA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Em_jcVguEeSme4rqoEiSFA"/>
+      </children>
+      <element xmi:type="uml:Class" href="GameProject.uml#_mbYMHlgrEeSme4rqoEiSFA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Em_jYVguEeSme4rqoEiSFA" x="956" y="1" width="171" height="181"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_FR_oMFguEeSme4rqoEiSFA" type="2008">
+      <children xmi:type="notation:DecorationNode" xmi:id="_FR_oMlguEeSme4rqoEiSFA" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_FR_oM1guEeSme4rqoEiSFA" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_FR_oNFguEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_FR_oNVguEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_FR_oNlguEeSme4rqoEiSFA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FR_oN1guEeSme4rqoEiSFA"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_FR_oOFguEeSme4rqoEiSFA" type="7018">
+        <children xmi:type="notation:Shape" xmi:id="_v2fTcFguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYLxVgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_v2fTcVguEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_v2fTclguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYLz1grEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_v2fTc1guEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_v2pEcFguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYL2VgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_v2pEcVguEeSme4rqoEiSFA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_FR_oOVguEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_FR_oOlguEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_FR_oO1guEeSme4rqoEiSFA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FR_oPFguEeSme4rqoEiSFA"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_FR_oPVguEeSme4rqoEiSFA" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_FR_oPlguEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_FR_oP1guEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_FR_oQFguEeSme4rqoEiSFA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FR_oQVguEeSme4rqoEiSFA"/>
+      </children>
+      <element xmi:type="uml:Class" href="GameProject.uml#_mbYLxFgrEeSme4rqoEiSFA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FR_oMVguEeSme4rqoEiSFA" x="969" y="223" width="132"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_FkS5IFguEeSme4rqoEiSFA" type="2008">
+      <children xmi:type="notation:DecorationNode" xmi:id="_FkS5IlguEeSme4rqoEiSFA" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_FkS5I1guEeSme4rqoEiSFA" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_FkS5JFguEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_FkS5JVguEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_FkS5JlguEeSme4rqoEiSFA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FkS5J1guEeSme4rqoEiSFA"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_FkS5KFguEeSme4rqoEiSFA" type="7018">
+        <children xmi:type="notation:Shape" xmi:id="_9qM68FguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYLtlgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9qM68VguEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_9qM68lguEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYLvVgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9qM681guEeSme4rqoEiSFA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_FkS5KVguEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_FkS5KlguEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_FkS5K1guEeSme4rqoEiSFA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FkS5LFguEeSme4rqoEiSFA"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_FkS5LVguEeSme4rqoEiSFA" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_FkS5LlguEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_FkS5L1guEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_FkS5MFguEeSme4rqoEiSFA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FkS5MVguEeSme4rqoEiSFA"/>
+      </children>
+      <element xmi:type="uml:Class" href="GameProject.uml#_mbYLr1grEeSme4rqoEiSFA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FkS5IVguEeSme4rqoEiSFA" x="29" y="214" width="110" height="113"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_GHshIFguEeSme4rqoEiSFA" type="2008">
+      <children xmi:type="notation:DecorationNode" xmi:id="_GHshIlguEeSme4rqoEiSFA" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_GHshI1guEeSme4rqoEiSFA" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_GHshJFguEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_GHshJVguEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_GHshJlguEeSme4rqoEiSFA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GHshJ1guEeSme4rqoEiSFA"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_GHshKFguEeSme4rqoEiSFA" type="7018">
+        <children xmi:type="notation:Shape" xmi:id="_Qbgd0FgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYLkVgrEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Qbgd0VgvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_Qbgd0lgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYLm1grEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Qbgd01gvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_Qbgd1FgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYLn1grEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Qbgd1VgvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_Qbgd1lgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYLo1grEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Qbgd11gvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_Qbgd2FgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYLp1grEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Qbgd2VgvEeSme4rqoEiSFA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_Qbgd2lgvEeSme4rqoEiSFA" type="3013">
+          <element xmi:type="uml:Operation" href="GameProject.uml#_mbYLq1grEeSme4rqoEiSFA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Qbgd21gvEeSme4rqoEiSFA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_GHshKVguEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_GHshKlguEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_GHshK1guEeSme4rqoEiSFA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GHshLFguEeSme4rqoEiSFA"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_GHshLVguEeSme4rqoEiSFA" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_GHshLlguEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_GHshL1guEeSme4rqoEiSFA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_GHshMFguEeSme4rqoEiSFA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GHshMVguEeSme4rqoEiSFA"/>
+      </children>
+      <element xmi:type="uml:Class" href="GameProject.uml#_mbYLgVgrEeSme4rqoEiSFA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GHshIVguEeSme4rqoEiSFA" x="589" width="164" height="165"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_duEncVgsEeSme4rqoEiSFA" name="diagram_compatibility_version" stringValue="1.0.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_duFOgFgsEeSme4rqoEiSFA"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_duFOgVgsEeSme4rqoEiSFA">
+      <owner xmi:type="uml:Model" href="GameProject.uml#_mbYLQFgrEeSme4rqoEiSFA"/>
+    </styles>
+    <element xmi:type="uml:Model" href="GameProject.uml#_mbYLQFgrEeSme4rqoEiSFA"/>
+    <edges xmi:type="notation:Connector" xmi:id="_Qgl8sFgwEeSme4rqoEiSFA" type="4008" source="_GHshIFguEeSme4rqoEiSFA" target="_FR_oMFguEeSme4rqoEiSFA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Qgl8s1gwEeSme4rqoEiSFA" type="6026">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Qgl8tFgwEeSme4rqoEiSFA" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Qgl8tVgwEeSme4rqoEiSFA" type="6027">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Qgl8tlgwEeSme4rqoEiSFA" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Qgl8sVgwEeSme4rqoEiSFA"/>
+      <element xmi:type="uml:Dependency" href="GameProject.uml#_QgJQwFgwEeSme4rqoEiSFA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Qgl8slgwEeSme4rqoEiSFA" points="[0, 4, -216, -186]$[68, 4, -148, -186]$[104, 4, -112, -186]$[104, 190, -112, 0]$[216, 190, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QhfUkFgwEeSme4rqoEiSFA" id="(1.0,0.7191919191919192)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QhfUkVgwEeSme4rqoEiSFA" id="(0.0,0.6640625)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_x4iY0FgwEeSme4rqoEiSFA" type="4008" source="_juLIsFgsEeSme4rqoEiSFA" target="_FR_oMFguEeSme4rqoEiSFA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_x4iY01gwEeSme4rqoEiSFA" type="6026">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_x4iY1FgwEeSme4rqoEiSFA" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_x4iY1VgwEeSme4rqoEiSFA" type="6027">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_x4iY1lgwEeSme4rqoEiSFA" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_x4iY0VgwEeSme4rqoEiSFA"/>
+      <element xmi:type="uml:Dependency" href="GameProject.uml#_x4Yn0FgwEeSme4rqoEiSFA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_x4iY0lgwEeSme4rqoEiSFA" points="[0, 0, -190, 80]$[90, 0, -100, 80]$[90, -80, -100, 0]$[190, -80, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x41TwFgwEeSme4rqoEiSFA" id="(1.0,0.8043478260869565)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x41TwVgwEeSme4rqoEiSFA" id="(0.0,0.3828125)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_hRWHoVgxEeSme4rqoEiSFA" type="4008" source="_Em_jYFguEeSme4rqoEiSFA" target="_FR_oMFguEeSme4rqoEiSFA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_hRWHpFgxEeSme4rqoEiSFA" type="6026">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_hRWHpVgxEeSme4rqoEiSFA" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_hRf4oFgxEeSme4rqoEiSFA" type="6027">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_hRf4oVgxEeSme4rqoEiSFA" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_hRWHolgxEeSme4rqoEiSFA"/>
+      <element xmi:type="uml:Dependency" href="GameProject.uml#_hRWHoFgxEeSme4rqoEiSFA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hRWHo1gxEeSme4rqoEiSFA" points="[0, 0, -13, -143]$[-36, 0, -49, -143]$[-36, 143, -49, 0]$[13, 143, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hRyzkFgxEeSme4rqoEiSFA" id="(0.0,0.8397790055248618)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hRyzkVgxEeSme4rqoEiSFA" id="(0.0,0.5703125)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_fjo9wFgzEeSme4rqoEiSFA" type="4002" source="_2QlT8FgsEeSme4rqoEiSFA" target="_juLIsFgsEeSme4rqoEiSFA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_fjo9w1gzEeSme4rqoEiSFA" type="6007">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_fjo9xFgzEeSme4rqoEiSFA" y="40"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_fjo9wVgzEeSme4rqoEiSFA"/>
+      <element xmi:type="uml:Generalization" href="GameProject.uml#_fjDH4FgzEeSme4rqoEiSFA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fjo9wlgzEeSme4rqoEiSFA" points="[0, 0, -90, 108]$[55, 0, -35, 108]$[55, -107, -35, 1]$[90, -107, 0, 1]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fkFpsFgzEeSme4rqoEiSFA" id="(1.0,0.7979166666666667)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fkFpsVgzEeSme4rqoEiSFA" id="(0.0,0.391304347826087)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_AdmdYVg0EeSme4rqoEiSFA" type="4008" source="_2QlT8FgsEeSme4rqoEiSFA" target="_FkS5IFguEeSme4rqoEiSFA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_AdvnUFg0EeSme4rqoEiSFA" type="6026">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AdvnUVg0EeSme4rqoEiSFA" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_AdvnUlg0EeSme4rqoEiSFA" type="6027">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AdvnU1g0EeSme4rqoEiSFA" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_AdmdYlg0EeSme4rqoEiSFA"/>
+      <element xmi:type="uml:Dependency" href="GameProject.uml#_AdmdYFg0EeSme4rqoEiSFA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AdmdY1g0EeSme4rqoEiSFA" points="[0, 0, 106, 32]$[-52, 0, 54, 32]$[-52, -31, 54, 1]$[-106, -31, 0, 1]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Ad5YUFg0EeSme4rqoEiSFA" id="(0.0,0.6090277777777777)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Ad5YUVg0EeSme4rqoEiSFA" id="(1.0,0.41887905604719766)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_c6GdwFg1EeSme4rqoEiSFA" type="4008" source="_2QlT8FgsEeSme4rqoEiSFA" target="_GHshIFguEeSme4rqoEiSFA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_c6Gdw1g1EeSme4rqoEiSFA" type="6026">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_c6GdxFg1EeSme4rqoEiSFA" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_c6GdxVg1EeSme4rqoEiSFA" type="6027">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_c6Gdxlg1EeSme4rqoEiSFA" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_c6GdwVg1EeSme4rqoEiSFA"/>
+      <element xmi:type="uml:Dependency" href="GameProject.uml#_c59T0Fg1EeSme4rqoEiSFA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_c6Gdwlg1EeSme4rqoEiSFA" points="[0, 0, -100, 196]$[53, 0, -47, 196]$[53, -195, -47, 1]$[100, -195, 0, 1]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_c6QOwFg1EeSme4rqoEiSFA" id="(1.0,0.65625)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_c6QOwVg1EeSme4rqoEiSFA" id="(0.0,0.7272727272727273)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_sNd6IVg1EeSme4rqoEiSFA" type="4008" source="_2QlT8FgsEeSme4rqoEiSFA" target="_Em_jYFguEeSme4rqoEiSFA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_sNd6JFg1EeSme4rqoEiSFA" type="6026">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_sNd6JVg1EeSme4rqoEiSFA" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_sNd6Jlg1EeSme4rqoEiSFA" type="6027">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_sNd6J1g1EeSme4rqoEiSFA" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_sNd6Ilg1EeSme4rqoEiSFA"/>
+      <element xmi:type="uml:Dependency" href="GameProject.uml#_sNd6IFg1EeSme4rqoEiSFA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sNd6I1g1EeSme4rqoEiSFA" points="[0, -4, -467, 223]$[53, -4, -414, 223]$[53, 108, -414, 335]$[93, 108, -374, 335]$[372, 108, -95, 335]$[407, 108, -60, 335]$[407, -231, -60, -4]$[467, -231, 0, -4]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sNw1EFg1EeSme4rqoEiSFA" id="(1.0,0.6979166666666666)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sNw1EVg1EeSme4rqoEiSFA" id="(0.0,0.5985267034990792)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_Ug7W4Fg2EeSme4rqoEiSFA" type="4001" source="_juLIsFgsEeSme4rqoEiSFA" target="_2QlT8FgsEeSme4rqoEiSFA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Ug7W41g2EeSme4rqoEiSFA" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Ug7W5Fg2EeSme4rqoEiSFA" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Ug7W5Vg2EeSme4rqoEiSFA" type="6002">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Ug7W5lg2EeSme4rqoEiSFA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Ug7W51g2EeSme4rqoEiSFA" type="6003">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Ug7W6Fg2EeSme4rqoEiSFA" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Ug7W6Vg2EeSme4rqoEiSFA" type="6005">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Ug7W6lg2EeSme4rqoEiSFA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Ug7W61g2EeSme4rqoEiSFA" type="6033">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Ug7W7Fg2EeSme4rqoEiSFA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Ug7W7Vg2EeSme4rqoEiSFA" type="6034">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Ug7W7lg2EeSme4rqoEiSFA" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Ug7W4Vg2EeSme4rqoEiSFA"/>
+      <element xmi:type="uml:Association" href="GameProject.uml#_mbYNc1grEeSme4rqoEiSFA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Ug7W4lg2EeSme4rqoEiSFA" points="[0, 0, 90, 15]$[-55, 0, 35, 15]$[-55, -15, 35, 0]$[-90, -15, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fDWz0Fg2EeSme4rqoEiSFA" id="(0.0,0.391304347826087)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fDWz0Vg2EeSme4rqoEiSFA" id="(1.0,0.5423611111111111)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_UhFH4Fg2EeSme4rqoEiSFA" type="4001" source="_vME58FgtEeSme4rqoEiSFA" target="_2QlT8FgsEeSme4rqoEiSFA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_UhFH41g2EeSme4rqoEiSFA" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UhFH5Fg2EeSme4rqoEiSFA" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_UhFH5Vg2EeSme4rqoEiSFA" type="6002">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UhFH5lg2EeSme4rqoEiSFA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_UhFH51g2EeSme4rqoEiSFA" type="6003">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UhFH6Fg2EeSme4rqoEiSFA" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_UhFH6Vg2EeSme4rqoEiSFA" type="6005">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UhFH6lg2EeSme4rqoEiSFA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_UhFH61g2EeSme4rqoEiSFA" type="6033">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UhFH7Fg2EeSme4rqoEiSFA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_UhFH7Vg2EeSme4rqoEiSFA" type="6034">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UhFH7lg2EeSme4rqoEiSFA" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_UhFH4Vg2EeSme4rqoEiSFA"/>
+      <element xmi:type="uml:Association" href="GameProject.uml#_mbYNdVgrEeSme4rqoEiSFA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UhFH4lg2EeSme4rqoEiSFA" points="[0, 0, -59, -35]$[34, 0, -25, -35]$[34, 35, -25, 0]$[59, 35, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fvsVYlg2EeSme4rqoEiSFA" id="(1.0,0.7347294938917975)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fvsVY1g2EeSme4rqoEiSFA" id="(0.0,0.35625)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_Uh94sFg2EeSme4rqoEiSFA" type="4001" source="_GHshIFguEeSme4rqoEiSFA" target="_2QlT8FgsEeSme4rqoEiSFA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Uh94s1g2EeSme4rqoEiSFA" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Uh94tFg2EeSme4rqoEiSFA" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Uh94tVg2EeSme4rqoEiSFA" type="6002">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Uh94tlg2EeSme4rqoEiSFA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Uh94t1g2EeSme4rqoEiSFA" type="6003">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Uh94uFg2EeSme4rqoEiSFA" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Uh94uVg2EeSme4rqoEiSFA" type="6005">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Uh94ulg2EeSme4rqoEiSFA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Uh94u1g2EeSme4rqoEiSFA" type="6033">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Uh94vFg2EeSme4rqoEiSFA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Uh94vVg2EeSme4rqoEiSFA" type="6034">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Uh94vlg2EeSme4rqoEiSFA" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Uh94sVg2EeSme4rqoEiSFA"/>
+      <element xmi:type="uml:Association" href="GameProject.uml#_mbYNe1grEeSme4rqoEiSFA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Uh94slg2EeSme4rqoEiSFA" points="[0, 6, 100, -63]$[-36, 6, 64, -63]$[-36, 69, 64, 0]$[-100, 69, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ev33IFg2EeSme4rqoEiSFA" id="(0.0,0.703030303030303)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ev33IVg2EeSme4rqoEiSFA" id="(1.0,0.3840277777777778)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_UiHpsFg2EeSme4rqoEiSFA" type="4001" source="_Em_jYFguEeSme4rqoEiSFA" target="_2QlT8FgsEeSme4rqoEiSFA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_UiHps1g2EeSme4rqoEiSFA" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UiHptFg2EeSme4rqoEiSFA" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_UiHptVg2EeSme4rqoEiSFA" type="6002">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UiHptlg2EeSme4rqoEiSFA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_UiHpt1g2EeSme4rqoEiSFA" type="6003">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UiHpuFg2EeSme4rqoEiSFA" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_UiHpuVg2EeSme4rqoEiSFA" type="6005">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UiHpulg2EeSme4rqoEiSFA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_UiHpu1g2EeSme4rqoEiSFA" type="6033">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UiHpvFg2EeSme4rqoEiSFA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_UiHpvVg2EeSme4rqoEiSFA" type="6034">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UiHpvlg2EeSme4rqoEiSFA" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_UiHpsVg2EeSme4rqoEiSFA"/>
+      <element xmi:type="uml:Association" href="GameProject.uml#_mbYNfVgrEeSme4rqoEiSFA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UiHpslg2EeSme4rqoEiSFA" points="[0, 0, 467, -106]$[-147, 0, 320, -106]$[-147, 73, 320, -33]$[-398, 73, 69, -33]$[-398, 106, 69, 0]$[-467, 106, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ePj_YFg2EeSme4rqoEiSFA" id="(0.0,0.5911602209944752)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ePj_YVg2EeSme4rqoEiSFA" id="(1.0,0.44513888888888886)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_UiRasFg2EeSme4rqoEiSFA" type="4001" source="_FkS5IFguEeSme4rqoEiSFA" target="_2QlT8FgsEeSme4rqoEiSFA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_UiRas1g2EeSme4rqoEiSFA" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UiRatFg2EeSme4rqoEiSFA" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_UiRatVg2EeSme4rqoEiSFA" type="6002">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UiRatlg2EeSme4rqoEiSFA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_UiRat1g2EeSme4rqoEiSFA" type="6003">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UiRauFg2EeSme4rqoEiSFA" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_UiRauVg2EeSme4rqoEiSFA" type="6005">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UiRaulg2EeSme4rqoEiSFA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_UiRau1g2EeSme4rqoEiSFA" type="6033">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UiakoFg2EeSme4rqoEiSFA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_UiakoVg2EeSme4rqoEiSFA" type="6034">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Uiakolg2EeSme4rqoEiSFA" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_UiRasVg2EeSme4rqoEiSFA"/>
+      <element xmi:type="uml:Association" href="GameProject.uml#_mbYNf1grEeSme4rqoEiSFA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UiRaslg2EeSme4rqoEiSFA" points="[0, 0, -106, 16]$[67, 0, -39, 16]$[67, -16, -39, 0]$[106, -16, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fvsVYFg2EeSme4rqoEiSFA" id="(1.0,0.4424778761061947)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fvsVYVg2EeSme4rqoEiSFA" id="(0.0,0.5145833333333333)"/>
+    </edges>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_7ySFUFhVEeSle_y3DMl-Yw" type="PapyrusUMLSequenceDiagram" name="Sequence diagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_7ySFUVhVEeSle_y3DMl-Yw" type="2001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_7ySFUlhVEeSle_y3DMl-Yw" type="5001"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_7ySFU1hVEeSle_y3DMl-Yw" type="7001">
+        <children xmi:type="notation:Shape" xmi:id="_GDOwsFhWEeSle_y3DMl-Yw" type="3001">
+          <children xmi:type="notation:DecorationNode" xmi:id="_GDPXwFhWEeSle_y3DMl-Yw" type="5002"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_GEhKIFhWEeSle_y3DMl-Yw" type="compartment_shape_display">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_GEhKIVhWEeSle_y3DMl-Yw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GEhKIlhWEeSle_y3DMl-Yw"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_OqasIFhaEeSle_y3DMl-Yw" type="3006">
+            <element xmi:type="uml:ActionExecutionSpecification" href="GameProject.uml#_OqWasFhaEeSle_y3DMl-Yw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OqasIVhaEeSle_y3DMl-Yw" x="36" y="101" width="16" height="29"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_RGgmAFhYEeSle_y3DMl-Yw" type="3006">
+            <element xmi:type="uml:ActionExecutionSpecification" href="GameProject.uml#_RGYDIFhYEeSle_y3DMl-Yw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RGgmAVhYEeSle_y3DMl-Yw" x="27" y="60" width="16" height="78"/>
+          </children>
+          <element xmi:type="uml:Lifeline" href="GameProject.uml#_GC2WMFhWEeSle_y3DMl-Yw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GDOwsVhWEeSle_y3DMl-Yw" x="170" y="10" width="71"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_GZ6LUFhWEeSle_y3DMl-Yw" type="3001">
+          <children xmi:type="notation:DecorationNode" xmi:id="_GZ6yYFhWEeSle_y3DMl-Yw" type="5002"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_GZ_q4FhWEeSle_y3DMl-Yw" type="compartment_shape_display">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_GZ_q4VhWEeSle_y3DMl-Yw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GZ_q4lhWEeSle_y3DMl-Yw"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_7kV9sFhaEeSle_y3DMl-Yw" type="3006">
+            <element xmi:type="uml:ActionExecutionSpecification" href="GameProject.uml#_7kRsQFhaEeSle_y3DMl-Yw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7kV9sVhaEeSle_y3DMl-Yw" x="25" y="129" width="16" height="50"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_mDzX8FhbEeSle_y3DMl-Yw" type="3006">
+            <element xmi:type="uml:ActionExecutionSpecification" href="GameProject.uml#_mDw7sFhbEeSle_y3DMl-Yw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mDzX8VhbEeSle_y3DMl-Yw" x="25" y="39" width="16" height="50"/>
+          </children>
+          <element xmi:type="uml:Lifeline" href="GameProject.uml#_GZ3vEFhWEeSle_y3DMl-Yw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GZ6LUVhWEeSle_y3DMl-Yw" x="710" y="10" width="67"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_GsH8sFhWEeSle_y3DMl-Yw" type="3001">
+          <children xmi:type="notation:DecorationNode" xmi:id="_GsIjwFhWEeSle_y3DMl-Yw" type="5002"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_GsMOIFhWEeSle_y3DMl-Yw" type="compartment_shape_display">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_GsMOIVhWEeSle_y3DMl-Yw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GsMOIlhWEeSle_y3DMl-Yw"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_WX7m4FhZEeSle_y3DMl-Yw" type="3006">
+            <element xmi:type="uml:ActionExecutionSpecification" href="GameProject.uml#_WX2HUFhZEeSle_y3DMl-Yw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WX7m4VhZEeSle_y3DMl-Yw" x="34" y="205" width="16" height="50"/>
+          </children>
+          <element xmi:type="uml:Lifeline" href="GameProject.uml#_GsGukFhWEeSle_y3DMl-Yw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GsH8sVhWEeSle_y3DMl-Yw" x="828" y="10" width="84"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_G87Y0FhWEeSle_y3DMl-Yw" type="3001">
+          <children xmi:type="notation:DecorationNode" xmi:id="_G87Y0lhWEeSle_y3DMl-Yw" type="5002"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_G8_qQFhWEeSle_y3DMl-Yw" type="compartment_shape_display">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_G8_qQVhWEeSle_y3DMl-Yw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G8_qQlhWEeSle_y3DMl-Yw"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_xlbvcFhYEeSle_y3DMl-Yw" type="3006">
+            <element xmi:type="uml:ActionExecutionSpecification" href="GameProject.uml#_xlVBwFhYEeSle_y3DMl-Yw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xlbvcVhYEeSle_y3DMl-Yw" x="57" y="26" width="16" height="20"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_b7DRMFhZEeSle_y3DMl-Yw" type="3006">
+            <element xmi:type="uml:ActionExecutionSpecification" href="GameProject.uml#_b6-YsFhZEeSle_y3DMl-Yw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b7DRMVhZEeSle_y3DMl-Yw" x="57" y="204" width="16" height="20"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_eOxK0FhaEeSle_y3DMl-Yw" type="3006">
+            <element xmi:type="uml:ActionExecutionSpecification" href="GameProject.uml#_eOrEMFhaEeSle_y3DMl-Yw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eOxK0VhaEeSle_y3DMl-Yw" x="57" y="105" width="16" height="21"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_E6o-sFhbEeSle_y3DMl-Yw" type="3006">
+            <element xmi:type="uml:ActionExecutionSpecification" href="GameProject.uml#_E6ktQFhbEeSle_y3DMl-Yw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E6o-sVhbEeSle_y3DMl-Yw" x="57" y="128" width="16" height="20"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_SM4YMFhYEeSle_y3DMl-Yw" type="3006">
+            <element xmi:type="uml:ActionExecutionSpecification" href="GameProject.uml#_SM1U4FhYEeSle_y3DMl-Yw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SM4YMVhYEeSle_y3DMl-Yw" x="48" y="12" width="16" height="219"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_LD5mgFhcEeSle_y3DMl-Yw" type="3006">
+            <element xmi:type="uml:ActionExecutionSpecification" href="GameProject.uml#_LD3KQFhcEeSle_y3DMl-Yw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LD5mgVhcEeSle_y3DMl-Yw" x="57" y="168" width="16" height="20"/>
+          </children>
+          <element xmi:type="uml:Lifeline" href="GameProject.uml#_G86KsFhWEeSle_y3DMl-Yw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G87Y0VhWEeSle_y3DMl-Yw" x="296" y="10" width="112"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_HhA9UFhWEeSle_y3DMl-Yw" type="3001">
+          <children xmi:type="notation:DecorationNode" xmi:id="_HhA9UlhWEeSle_y3DMl-Yw" type="5002"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_HhFOwFhWEeSle_y3DMl-Yw" type="compartment_shape_display">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_HhFOwVhWEeSle_y3DMl-Yw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HhFOwlhWEeSle_y3DMl-Yw"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_U3vUkFhbEeSle_y3DMl-Yw" type="3006">
+            <element xmi:type="uml:ActionExecutionSpecification" href="GameProject.uml#_U3s4UFhbEeSle_y3DMl-Yw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U3vUkVhbEeSle_y3DMl-Yw" x="31" y="22" width="16" height="50"/>
+          </children>
+          <element xmi:type="uml:Lifeline" href="GameProject.uml#_Hg_vMFhWEeSle_y3DMl-Yw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HhA9UVhWEeSle_y3DMl-Yw" x="574" y="10" width="79"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_H8kQ4FhWEeSle_y3DMl-Yw" type="3001">
+          <children xmi:type="notation:DecorationNode" xmi:id="_H8k38FhWEeSle_y3DMl-Yw" type="5002"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_H8pJYFhWEeSle_y3DMl-Yw" type="compartment_shape_display">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_H8pJYVhWEeSle_y3DMl-Yw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H8pJYlhWEeSle_y3DMl-Yw"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_Opyr8FhYEeSle_y3DMl-Yw" type="3006">
+            <element xmi:type="uml:ActionExecutionSpecification" href="GameProject.uml#_OpvBkFhYEeSle_y3DMl-Yw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Opyr8VhYEeSle_y3DMl-Yw" x="37" y="20" width="16" height="50"/>
+          </children>
+          <element xmi:type="uml:Lifeline" href="GameProject.uml#_H8jCwFhWEeSle_y3DMl-Yw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H8kQ4VhWEeSle_y3DMl-Yw" x="28" y="10" width="90"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_IT_SYFhWEeSle_y3DMl-Yw" type="3001">
+          <children xmi:type="notation:DecorationNode" xmi:id="_IT_SYlhWEeSle_y3DMl-Yw" type="5002"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_IUDj0FhWEeSle_y3DMl-Yw" type="compartment_shape_display">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_IUDj0VhWEeSle_y3DMl-Yw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IUDj0lhWEeSle_y3DMl-Yw"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_538tUFhaEeSle_y3DMl-Yw" type="3006">
+            <element xmi:type="uml:ActionExecutionSpecification" href="GameProject.uml#_536REVhaEeSle_y3DMl-Yw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_538tUVhaEeSle_y3DMl-Yw" x="25" y="105" width="16" height="50"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_huKNYFhbEeSle_y3DMl-Yw" type="3006">
+            <element xmi:type="uml:ActionExecutionSpecification" href="GameProject.uml#_huIYMFhbEeSle_y3DMl-Yw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_huKNYVhbEeSle_y3DMl-Yw" x="25" y="18" width="16" height="50"/>
+          </children>
+          <element xmi:type="uml:Lifeline" href="GameProject.uml#_IT-EQFhWEeSle_y3DMl-Yw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IT_SYVhWEeSle_y3DMl-Yw" x="461" y="10" width="67"/>
+        </children>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7ySFVFhVEeSle_y3DMl-Yw"/>
+      </children>
+      <element xmi:type="uml:Interaction" href="GameProject.uml#_SlIAcFhVEeSle_y3DMl-Yw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7ySFVVhVEeSle_y3DMl-Yw" x="5" y="-134" width="984"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_7ySFVlhVEeSle_y3DMl-Yw" name="diagram_compatibility_version" stringValue="1.0.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_7ySFV1hVEeSle_y3DMl-Yw"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_7ySFWFhVEeSle_y3DMl-Yw">
+      <owner xmi:type="uml:Model" href="GameProject.uml#_mbYLQFgrEeSme4rqoEiSFA"/>
+    </styles>
+    <element xmi:type="uml:Interaction" href="GameProject.uml#_SlIAcFhVEeSle_y3DMl-Yw"/>
+    <edges xmi:type="notation:Edge" xmi:id="_qFUXgFhZEeSle_y3DMl-Yw" type="4003" source="_b7DRMFhZEeSle_y3DMl-Yw" target="_WX7m4FhZEeSle_y3DMl-Yw">
+      <children xmi:type="notation:DecorationNode" xmi:id="_qFUXhFhZEeSle_y3DMl-Yw" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_qFUXhVhZEeSle_y3DMl-Yw" x="1" y="-13"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_qFU-kFhZEeSle_y3DMl-Yw" type="6008">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_qFU-kVhZEeSle_y3DMl-Yw" x="1" y="-33"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_qFUXgVhZEeSle_y3DMl-Yw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_qFUXglhZEeSle_y3DMl-Yw"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_qFU-klhZEeSle_y3DMl-Yw"/>
+      <element xmi:type="uml:Message" href="GameProject.uml#_qFJ_cFhZEeSle_y3DMl-Yw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_qFUXg1hZEeSle_y3DMl-Yw" points="[16, 0, -493, 18]$[525, -18, 16, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qFaeIFhZEeSle_y3DMl-Yw" id="(0.0,0.0){8}"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qFaeIVhZEeSle_y3DMl-Yw" id="(0.0,0.0){8}"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_CxxDIFhaEeSle_y3DMl-Yw" type="4005" source="_xlbvcFhYEeSle_y3DMl-Yw" target="_Opyr8FhYEeSle_y3DMl-Yw">
+      <children xmi:type="notation:DecorationNode" xmi:id="_CxxqMFhaEeSle_y3DMl-Yw" type="6003">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_CxxqMVhaEeSle_y3DMl-Yw" x="1" y="-13"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_CxxqMlhaEeSle_y3DMl-Yw" type="6010">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_CxxqM1haEeSle_y3DMl-Yw" x="1" y="-33"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_CxxDIVhaEeSle_y3DMl-Yw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_CxxDIlhaEeSle_y3DMl-Yw"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_CxxqNFhaEeSle_y3DMl-Yw"/>
+      <element xmi:type="uml:Message" href="GameProject.uml#_Cxn5MFhaEeSle_y3DMl-Yw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CxxDI1haEeSle_y3DMl-Yw" points="[0, 0, 288, -1]$[-272, 1, 16, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Cx2isFhaEeSle_y3DMl-Yw" id="(0.0,0.0){8}"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Cx2isVhaEeSle_y3DMl-Yw" id="(0.0,0.0){8}"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_LTIAMFhaEeSle_y3DMl-Yw" type="4003" source="_SM4YMFhYEeSle_y3DMl-Yw" target="_RGgmAFhYEeSle_y3DMl-Yw">
+      <children xmi:type="notation:DecorationNode" xmi:id="_LTInQFhaEeSle_y3DMl-Yw" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_LTInQVhaEeSle_y3DMl-Yw" x="1" y="-13"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_LTInQlhaEeSle_y3DMl-Yw" type="6008">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_LTInQ1haEeSle_y3DMl-Yw" x="1" y="-33"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_LTIAMVhaEeSle_y3DMl-Yw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_LTIAMlhaEeSle_y3DMl-Yw"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_LTJOUFhaEeSle_y3DMl-Yw"/>
+      <element xmi:type="uml:Message" href="GameProject.uml#_LTBSgFhaEeSle_y3DMl-Yw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LTIAM1haEeSle_y3DMl-Yw" points="[-10, 3, 147, 15]$[-141, -12, 16, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LTOG0FhaEeSle_y3DMl-Yw" id="(0.625,0.273972602739726)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LTOG0VhaEeSle_y3DMl-Yw" id="(0.0,0.0){8}"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="__gdN8FhaEeSle_y3DMl-Yw" type="4003" source="_eOxK0FhaEeSle_y3DMl-Yw" target="_538tUFhaEeSle_y3DMl-Yw">
+      <children xmi:type="notation:DecorationNode" xmi:id="__gdN9FhaEeSle_y3DMl-Yw" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="__gdN9VhaEeSle_y3DMl-Yw" x="1" y="-13"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="__gd1AFhaEeSle_y3DMl-Yw" type="6008">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="__gd1AVhaEeSle_y3DMl-Yw" x="1" y="-33"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="__gdN8VhaEeSle_y3DMl-Yw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="__gdN8lhaEeSle_y3DMl-Yw"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="__gd1AlhaEeSle_y3DMl-Yw"/>
+      <element xmi:type="uml:Message" href="GameProject.uml#__gTc8FhaEeSle_y3DMl-Yw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__gdN81haEeSle_y3DMl-Yw" points="[16, 0, -117, 0]$[149, 0, 16, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="__gitgFhaEeSle_y3DMl-Yw" id="(0.0,0.0){8}"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="__gjUkFhaEeSle_y3DMl-Yw" id="(0.0,0.0){8}"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_JvWD0FhbEeSle_y3DMl-Yw" type="4003" source="_eOxK0FhaEeSle_y3DMl-Yw" target="_7kV9sFhaEeSle_y3DMl-Yw">
+      <children xmi:type="notation:DecorationNode" xmi:id="_JvWq4FhbEeSle_y3DMl-Yw" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_JvWq4VhbEeSle_y3DMl-Yw" x="1" y="-13"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_JvWq4lhbEeSle_y3DMl-Yw" type="6008">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_JvWq41hbEeSle_y3DMl-Yw" x="1" y="-33"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_JvWD0VhbEeSle_y3DMl-Yw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_JvWD0lhbEeSle_y3DMl-Yw"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_JvWq5FhbEeSle_y3DMl-Yw"/>
+      <element xmi:type="uml:Message" href="GameProject.uml#_JvM54FhbEeSle_y3DMl-Yw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JvWD01hbEeSle_y3DMl-Yw" points="[16, 0, -366, 52]$[398, -52, 16, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Jva8UFhbEeSle_y3DMl-Yw" id="(0.0,1.0){32}"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Jva8UVhbEeSle_y3DMl-Yw" id="(0.0,0.0){8}"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_jhaTsFhbEeSle_y3DMl-Yw" type="4003" source="_huKNYFhbEeSle_y3DMl-Yw" target="_U3vUkFhbEeSle_y3DMl-Yw">
+      <children xmi:type="notation:DecorationNode" xmi:id="_jha6wFhbEeSle_y3DMl-Yw" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_jha6wVhbEeSle_y3DMl-Yw" x="1" y="-13"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_jha6wlhbEeSle_y3DMl-Yw" type="6008">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_jha6w1hbEeSle_y3DMl-Yw" x="1" y="-33"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_jhaTsVhbEeSle_y3DMl-Yw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_jhaTslhbEeSle_y3DMl-Yw"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_jhbh0FhbEeSle_y3DMl-Yw"/>
+      <element xmi:type="uml:Message" href="GameProject.uml#_jhRw0FhbEeSle_y3DMl-Yw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jhaTs1hbEeSle_y3DMl-Yw" points="[16, 0, -103, 3]$[135, -3, 16, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_jhfzQFhbEeSle_y3DMl-Yw" id="(0.0,0.0){8}"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_jhfzQVhbEeSle_y3DMl-Yw" id="(0.0,0.0){8}"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_oRIyMFhbEeSle_y3DMl-Yw" type="4003" source="_mDzX8FhbEeSle_y3DMl-Yw" target="_U3vUkFhbEeSle_y3DMl-Yw">
+      <children xmi:type="notation:DecorationNode" xmi:id="_oRJZQFhbEeSle_y3DMl-Yw" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oRJZQVhbEeSle_y3DMl-Yw" x="1" y="-13"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_oRJZQlhbEeSle_y3DMl-Yw" type="6008">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oRJZQ1hbEeSle_y3DMl-Yw" x="1" y="-33"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_oRIyMVhbEeSle_y3DMl-Yw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_oRIyMlhbEeSle_y3DMl-Yw"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_oRJZRFhbEeSle_y3DMl-Yw"/>
+      <element xmi:type="uml:Message" href="GameProject.uml#_oRCEgFhbEeSle_y3DMl-Yw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oRIyM1hbEeSle_y3DMl-Yw" points="[0, 0, 130, 17]$[-114, -17, 16, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oRORwFhbEeSle_y3DMl-Yw" id="(0.0,0.0){8}"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oRORwVhbEeSle_y3DMl-Yw" id="(0.0,0.0){8}"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_urqloFhbEeSle_y3DMl-Yw" type="4005" source="_7kV9sFhaEeSle_y3DMl-Yw" target="_E6o-sFhbEeSle_y3DMl-Yw">
+      <children xmi:type="notation:DecorationNode" xmi:id="_urqlpFhbEeSle_y3DMl-Yw" type="6003">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_urqlpVhbEeSle_y3DMl-Yw" x="1" y="-13"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_urrMsFhbEeSle_y3DMl-Yw" type="6010">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_urrMsVhbEeSle_y3DMl-Yw" x="1" y="-33"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_urqloVhbEeSle_y3DMl-Yw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_urqlolhbEeSle_y3DMl-Yw"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_urrMslhbEeSle_y3DMl-Yw"/>
+      <element xmi:type="uml:Message" href="GameProject.uml#_uriCwFhbEeSle_y3DMl-Yw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_urqlo1hbEeSle_y3DMl-Yw" points="[0, 0, 382, 31]$[-366, -31, 16, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_urveIFhbEeSle_y3DMl-Yw" id="(0.0,1.0){32}"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_urveIVhbEeSle_y3DMl-Yw" id="(0.0,1.0){32}"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_8TMyUFhbEeSle_y3DMl-Yw" type="4005" source="_538tUFhaEeSle_y3DMl-Yw" target="_eOxK0FhaEeSle_y3DMl-Yw">
+      <children xmi:type="notation:DecorationNode" xmi:id="_8TNZYFhbEeSle_y3DMl-Yw" type="6003">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_8TNZYVhbEeSle_y3DMl-Yw" x="1" y="-13"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_8TNZYlhbEeSle_y3DMl-Yw" type="6010">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_8TNZY1hbEeSle_y3DMl-Yw" x="1" y="-33"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_8TMyUVhbEeSle_y3DMl-Yw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_8TMyUlhbEeSle_y3DMl-Yw"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_8TOAcFhbEeSle_y3DMl-Yw"/>
+      <element xmi:type="uml:Message" href="GameProject.uml#_8TFdkFhbEeSle_y3DMl-Yw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8TMyU1hbEeSle_y3DMl-Yw" points="[0, 0, 133, 29]$[-117, -29, 16, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8TS48FhbEeSle_y3DMl-Yw" id="(0.0,1.0){32}"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8TTgAFhbEeSle_y3DMl-Yw" id="(0.0,1.0){32}"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_R4gt4FhcEeSle_y3DMl-Yw" type="4003" source="_OqasIFhaEeSle_y3DMl-Yw" target="_LD5mgFhcEeSle_y3DMl-Yw">
+      <children xmi:type="notation:DecorationNode" xmi:id="_R4gt5FhcEeSle_y3DMl-Yw" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_R4gt5VhcEeSle_y3DMl-Yw" x="1" y="-13"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_R4hU8FhcEeSle_y3DMl-Yw" type="6008">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_R4hU8VhcEeSle_y3DMl-Yw" x="1" y="-33"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_R4gt4VhcEeSle_y3DMl-Yw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_R4gt4lhcEeSle_y3DMl-Yw"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_R4hU8lhcEeSle_y3DMl-Yw"/>
+      <element xmi:type="uml:Message" href="GameProject.uml#_R4W84FhcEeSle_y3DMl-Yw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_R4gt41hcEeSle_y3DMl-Yw" points="[16, 0, -131, -67]$[163, 67, 16, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_R49Z0FhcEeSle_y3DMl-Yw" id="(0.0,0.0){8}"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_R49Z0VhcEeSle_y3DMl-Yw" id="(0.0,0.0){8}"/>
+    </edges>
+  </notation:Diagram>
+  <css:ModelStyleSheets xmi:id="_8c9aAFhVEeSle_y3DMl-Yw"/>
+</xmi:XMI>
